@@ -3,3 +3,7 @@ help: 'Команда <info>config:settings:debug</info> поможет вам �
 welcome: 'Добро пожаловать в настройки комманды отладки Drupal конфигураций'
 messages:
     current: 'Текущий Ключ:значение в файле настроек'
+examples:
+    -
+        description: 'Displays key:value as per the settings file'
+        execution: "drupal debug:config:settings\n"

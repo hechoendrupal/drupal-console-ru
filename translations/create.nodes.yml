@@ -26,3 +26,10 @@ messages:
     created: 'Время создания'
     invalid-content-types: 'Типы содержимого "%s" недопустимы'
     created-nodes: '"%s" материалов создано успешно.'
+examples:
+    -
+        description: 'Provide the content type name.'
+        execution: 'drupal create:nodes content-name'
+    -
+        description: 'Provide the limit of publications, limit of title words, time range and language.'
+        execution: "drupal create:nodes content-name \\\n  --limit=\"5\" \\\n  --title-words=\"5\" \\\n  --time-range=\"1\" \\\n  --language=\"und\"\n"

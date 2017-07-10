@@ -21,7 +21,14 @@ questions:
         - '1 год назад'
 messages:
     user-id: 'Идентификатор пользователя'
-    roles: 'Роли'
+    roles: Роли
     username: 'Имя пользователя'
     created: 'Время создания'
     created-users: '"%s" пользователей создано успешно.'
+examples:
+    -
+        description: 'Provide the user role.'
+        execution: 'drupal create:users role'
+    -
+        description: 'Provide the number of users to create, password and time range to create.'
+        execution: "drupal create:users role \\\n  --limit=\"5\" \\\n  --password=\"usersnewpassword\" \\\n  --time-range=\"1\"\n"

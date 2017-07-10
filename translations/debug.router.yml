@@ -1,0 +1,19 @@
+description: 'Displays current routes for the application'
+arguments:
+    route-name: 'Route names'
+messages:
+    name: 'Route name'
+    class: 'Class path'
+    route: Route
+    path: 'Class path'
+    defaults: Defaults
+    requirements: Requirements
+    options: Options
+    pattern: Pattern
+examples:
+    -
+        description: 'Displays current routes for the application'
+        execution: 'drupal rod'
+    -
+        description: 'Displays details for the route user.page (/user)'
+        execution: 'drupal rod user.page'

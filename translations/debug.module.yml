@@ -1,4 +1,5 @@
 description: 'Отображение текущих модулей доступных для приложения'
+module: 'Module name'
 options:
     status: 'Статус модуля [включен|выключен]'
     type: 'Тип модуля [ядро|не ядро]'
@@ -18,3 +19,10 @@ messages:
     no-results: 'Модуль "%s" не найден в репозитории'
     enabled: Включен
     disabled: Выключен
+examples:
+    -
+        description: 'Display all installed modules'
+        execution: 'drupal mod --status=installed'
+    -
+        description: 'Display all installed and no core modules'
+        execution: 'drupal mod --status=installed --type=no-core'

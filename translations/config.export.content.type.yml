@@ -8,3 +8,10 @@ messages:
     content_type_exported: 'Экспорт типа материала'
 options:
     optional-config: 'Экспорт типа материала как дополнительную YAML конфигурацию в ваш модуль'
+examples:
+    -
+        description: 'Provide a content type  and module name'
+        execution: "drupal config:export:content:type page \\\n  --module=\"demo\""
+    -
+        description: 'If you want export content type provide the optional config'
+        execution: "drupal config:export:content:type page \\\n  --module=\"demo\" \\\n  --optional-config \n"

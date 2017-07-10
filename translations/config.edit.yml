@@ -1,8 +1,15 @@
 description: 'Редактирование выбранной конфигурации.'
 arguments:
     config-name: 'Имя конфигурации.'
-    editor: 'Редактор.'
+    editor: Редактор.
 questions:
     config-name: 'Выберите конфигурацию'
 messages:
     no-directory: 'Произошла ошибка во время создания каталога'
+examples:
+    -
+        description: 'Edit system cron configurations with "vim" (default editor).'
+        execution: 'drupal config:edit system.cron'
+    -
+        description: 'Edit system cron configurations with "gedit".'
+        execution: 'drupal config:edit system.cron gedit'

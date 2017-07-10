@@ -1,7 +1,19 @@
 description: 'Экспорт текущей конфигурации приложения.'
-arguments:
-    directory: 'Задать директорию для экспорта конфигурации.'
-    tar: 'Если установлено, то конфигурация будет экспортирована в архив.'
+options:
+    directory: 'Define the export directory to save the configuration output.'
+    tar: 'If set, the configuration will be exported to an archive file.'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
 messages:
     directory: 'Конфигурация была экспортирована в:'
     error: 'Произошла ошибка при создании каталога "%s"'
+examples:
+    -
+        description: 'Optional you can add the path to export'
+        execution: "drupal config:export  \\\n  --directory=\"path/to/export\""
+    -
+        description: 'If export will be in a compressed file and/or if uuid and config hashes will be removed.'
+        execution: "drupal config:export  \\\n  --directory=\"path/to/export\" \\\n  --tar \\\n  --remove-uuid \\\n  --remove-config-hash\n"
+arguments:
+    directory: 'Задать директорию для экспорта конфигурации.'
+    tar: 'Если установлено, то конфигурация будет экспортирована в архив.'

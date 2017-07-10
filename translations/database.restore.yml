@@ -7,3 +7,7 @@ messages:
     success: 'База данных импортирована из:'
     no-file: 'Missing file option'
 help: 'Восстановление структуры и содержимого базы данных.'
+examples:
+    -
+        description: 'Restore the database file dump to the database default or another one specified'
+        execution: "drupal database:restore \\\n  --file='/srv/dump/db.sql'\n"

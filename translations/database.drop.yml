@@ -7,3 +7,7 @@ question:
 messages:
     table: Таблица
     table-drop: 'Таблицы "%s" удалены успешно'
+examples:
+    -
+        description: 'Drop the tables on the database specified on the argument'
+        execution: "drupal database:drop \\\n  <database>\n"

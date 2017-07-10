@@ -4,6 +4,11 @@ messages:
     site: Site
     host: Host
     root: Root
-    directory-not-found: 'Sites local directory not found'
+    not-sites: 'No sites defined'
+    invalid-site: 'Invalid site name'
     private-key: 'Error with private key'
     connect-error: 'Error connecting to remote machine'
+    directory-not-found: 'Sites local directory not found'
+options:
+    target: Target
+    property: Property

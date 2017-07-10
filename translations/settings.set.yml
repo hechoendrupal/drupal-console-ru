@@ -1,5 +1,7 @@
 description: 'Change a specific setting value in DrupalConsole config file'
 arguments:
+    name: 'Setting name in YAML flatten format to set a value in Drupal Console config file'
+    value: 'Setting value to set in Drupal Console config file'
     setting-name: 'Setting name in yaml flatten format to set a value in Drupal Console config file'
     setting-value: 'Setting value to set in Drupal Console config file'
 messages:
@@ -8,3 +10,4 @@ messages:
     error-writing: 'Error writing config file.'
     success: 'Setting "%s" was set to "%s" for Drupal Console'
     missing-file: 'The "%s" config file is missing, try executing `drupal init`'
+    missing-language: 'Provided language: "%s", not found'

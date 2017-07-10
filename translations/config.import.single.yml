@@ -1,11 +1,23 @@
 description: 'Импорт выбранной конфигурации.'
+options:
+    file: 'The file(s) name or file(s) absolute path to import'
+    directory: 'The path from where to import file(s).'
+questions:
+    file: 'Ввудите путь к файлу конфигурации'
+    directory: 'Enter path from where to import files.'
+    name: 'Введите имя конфигурации'
+messages:
+    missing-file: 'File option is missing.'
+    empty-value: 'Значение не может быть пустым'
+    success: 'Кофигурация "%s", импортирована.'
+examples:
+    -
+        description: 'Providing a file option using full path.'
+        execution: "drupal config:import:single \\\n  --file=\"/path/to/file/block.block.default_block.yml\""
+    -
+        description: 'Providing file and directory options'
+        execution: "drupal config:import:single  \\\n  --file=\"block.block.default_block.yml\" \\\n  --directory=\"/path/to/directory\"\n"
 arguments:
     name: 'Имя конфигурации.'
     file: 'Путь к файлу импорта'
     input-file: 'Путь к файлам импорта.'
-questions:
-    name: 'Введите имя конфигурации'
-    file: 'Ввудите путь к файлу конфигурации'
-messages:
-    empty-value: 'Значение не может быть пустым'
-    success: 'Кофигурация "%s", импортирована.'

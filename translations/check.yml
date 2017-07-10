@@ -1,5 +1,6 @@
 description: 'Проверка системных требований'
 messages:
+    file: 'Checking requirements using file at:'
     php_invalid: 'Недопустимая текущая установленная версия "%s", требуется "%s" или выше'
     configuration_missing: 'Конфигурация "%s" отсутствует.'
     configuration_overwritten: 'Конфигурация "%s" отсутствует и перезаписана "%s".'

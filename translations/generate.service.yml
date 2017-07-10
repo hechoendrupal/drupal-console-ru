@@ -13,6 +13,7 @@ questions:
     service-name: 'Введите имя сервиса'
     class: 'Введите имя Класса'
     interface: 'Создать интерфейс'
+    interface-name: 'Enter the interface name'
     services: common.options.services
     path: 'Enter the path for the services'
 messages:

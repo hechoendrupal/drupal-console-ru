@@ -1,0 +1,15 @@
+description: 'Показывает текущую конфигурацию.'
+arguments:
+    name: 'Имя конфигурации.'
+errors:
+    not-exists: 'Конфигурация "%s" не существует.'
+examples:
+    -
+        description: 'List all configuration object names.'
+        execution: 'drupal config:debug'
+    -
+        description: 'Display system site configurations values.'
+        execution: 'drupal config:debug system.site'
+    -
+        description: 'List all system configuration names.'
+        execution: 'drupal config:debug | grep system'
