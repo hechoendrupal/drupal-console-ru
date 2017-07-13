@@ -1,0 +1,29 @@
+description: 'Генерировать новую "%s"'
+help: 'Команда <info>"%s"</info> поможет генерировать новые "%s"'
+welcome: 'Добро пожаловать в генератор Drupal форм'
+options:
+    module: common.options.module
+    class: 'Название класса формы'
+    form-id: 'Идентификатор формы'
+    services: common.options.services
+    config-file: 'Add a config file'
+    inputs: common.options.inputs
+    path: 'Enter the form path'
+    menu-link-gen: 'Generate a menu link'
+    menu-link-title: 'A title for the menu link'
+    menu-parent: 'Menu parent'
+    menu-link-desc: 'A description for the menu link'
+    routing: 'Generate routing'
+questions:
+    module: common.questions.module
+    class: 'Введите имя Класса Формы'
+    form-id: 'Введите идентификатор Формы'
+    services: common.questions.services
+    config-file: 'Do you want to generate a config file'
+    inputs: common.questions.inputs
+    routing: 'Would you like to register a route for this form'
+    path: 'Enter the route path'
+    menu_link_gen: 'Генерировать ссылку в меню'
+    menu_link_title: 'Заголовок ссылки в меню'
+    menu_parent: 'Родительское меню'
+    menu_link_desc: 'Описание для ссылки в меню'
