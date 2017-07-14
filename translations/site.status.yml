@@ -2,7 +2,7 @@ description: 'View current Drupal Installation status'
 messages:
     application: Application
     system: 'System Info'
-    hash_salt: 'Hash salt'
+    hash-salt: 'Hash salt'
     console: 'Drupal Console version'
     database: 'Database connection'
     driver: Driver
@@ -12,9 +12,18 @@ messages:
     password: Password
     theme: Themes
     connection: Connection
+    theme-default: 'Default theme'
+    theme-admin: 'Admin theme'
+    directory: Directories
+    directory-root: 'Site root directory'
+    directory-temporary: 'Site temporary directory'
+    directory-theme-default: 'Default theme directory'
+    directory-theme-admin: 'Admin theme directory'
+    current-version: 'Current Drupal ("%s")'
+    not-installed: 'Drupal is not installed'
+    hash_salt: 'Hash salt'
     theme_default: 'Default theme'
     theme_admin: 'Admin theme'
-    directory: Directories
     directory_root: 'Site root directory'
     directory_temporary: 'Site temporary directory'
     directory_theme_default: 'Default theme directory'
@@ -25,3 +34,7 @@ messages:
     configuration: Configuration
     active: 'Active config path'
     staging: 'Staging config path'
+examples:
+    -
+        description: 'Get drupal installation status specifying the output format as table'
+        execution: "drupal site:status  \\\n  --format=\"table\"\n"

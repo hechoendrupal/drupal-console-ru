@@ -6,3 +6,7 @@ messages:
     description: Описание
     no-migrations: 'Нет доступных миграций, попробуйте выполнить команду: migrate:setup:migrations'
     tags: Теги
+examples:
+    -
+        description: 'Displays current migration'
+        execution: "drupal debug:migrate\n"

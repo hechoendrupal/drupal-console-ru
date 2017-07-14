@@ -4,3 +4,7 @@ arguments:
 options:
     absolute: 'Return module absolute path'
 messages: null
+examples:
+    -
+        description: 'Get the relative path of the module specifying the module name'
+        execution: "drupal module:path  modulename\n"

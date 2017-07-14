@@ -6,3 +6,10 @@ messages:
     maintenance-off: 'Выключить режим обслуживания'
 errors:
     invalid-mode: 'Неверный режим обслуживания'
+examples:
+    -
+        description: 'Switch on maintenance'
+        execution: 'drupal site:maintenance  on'
+    -
+        description: 'Switch off maintenance'
+        execution: "drupal site:maintenance  off\n"

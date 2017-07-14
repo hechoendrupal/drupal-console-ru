@@ -8,9 +8,10 @@ options:
     format: 'Формат вывода (txt, xml, json, или md)'
 messages:
     usage: "<comment>Использование:</comment>\n"
-    usage_details: "  команда [параметры] [аргументы]\n\n"
+    usage-details: "  command [options] [arguments]\n\n"
     arguments: '<comment>Аргументы:</comment>'
     options: '<comment>Параметры:</comment>'
     help: '<comment>Помощь:</comment>'
     comment: '<comment>Доступные команды для пространства имен ""%s":</comment>'
     available-commands: '<comment>Доступные команды:</comment>'
+    usage_details: "  команда [параметры] [аргументы]\n\n"

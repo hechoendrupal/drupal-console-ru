@@ -5,6 +5,7 @@ questions:
     content-type: 'Тип материала для экспорта'
     optional-config: 'Экспорт типа материала в модуль как дополнительную конфигурацию'
 messages:
+    content-type-exported: 'Exporting content type'
     content_type_exported: 'Экспорт типа материала'
 options:
     optional-config: 'Экспорт типа материала как дополнительную YAML конфигурацию в ваш модуль'

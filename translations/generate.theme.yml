@@ -41,3 +41,10 @@ warnings:
     module-unavailable: 'Warning The following modules are not already available in your local environment "%s"'
 errors:
     directory-exists: 'The target directory "%s" is not empty.'
+examples:
+    -
+        description: 'Generate a theme without region and without breakpoint specifying the theme name, its machine name, the theme path, a description, the drupal core, the package name and the global library'
+        execution: "drupal generate:theme  \\\n  --theme=\"AnotherTheme\"  \\\n  --machine-name=\"anothertheme\"  \\\n  --theme-path=\"/themes/custom\"  \\\n  --description=\"My Awesome theme\"  \\\n  --core=\"8.x\"  \\\n  --package=\"PackageName\"  \\\n  --global-library=\"global-styling\"  \\\n  --base-theme=\"false\""
+    -
+        description: 'Generate a theme base on stable theme with two region defined and one breakpoint specifying the theme name, its machine name, the theme path, a description, the drupal core, the package name, a global library, its base, the regions and the breakpoint'
+        execution: "drupal generate:theme  \\\n  --theme=\"MyTheme\"  \\\n  --machine-name=\"mytheme\"  \\\n  --theme-path=\"/themes/custom\"  \\\n  --description=\"My Awesome theme\"  \\\n  --core=\"8.x\"  \\\n  --package=\"MyThemePackage\"  \\\n  --global-library=\"global-styling\"  \\\n  --base-theme=\"stable\"  \\\n  --regions='\"region_name\":\"Content\", \"region_machine_name\":\"content\"'  \\\n  --regions='\"region_name\":\"Panel\", \"region_machine_name\":\"panel\"'  \\\n  --breakpoints='\"breakpoint_name\":\"narrow\", \"breakpoint_label\":\"narrow\", \"breakpoint_media_query\":\"all and (min-width: 560px) and (max-width: 850px)\", \"breakpoint_weight\":\"1\", \"breakpoint_multipliers\":\"1x\"'\n"

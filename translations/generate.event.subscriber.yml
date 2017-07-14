@@ -2,3 +2,7 @@ description: 'Generate an event subscriber'
 questions:
     class: 'Class name'
     callback-name: 'Callback function name to handle event'
+examples:
+    -
+        description: 'Generate an event subscriber specifying the module name, its name, the class and the events to subscribe'
+        execution: "drupal generate:event:subscriber  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.default\"  \\\n  --class=\"DefaultSubscriber\"  \\\n  --events='kernel_request'\n"

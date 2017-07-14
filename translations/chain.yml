@@ -4,13 +4,16 @@ options:
 questions:
     chain-file: 'Select chain file to execute'
 messages:
-    missing_file: 'Необходимо указать действительный путь и имя файла.'
-    invalid_file: 'Файл "%s" не найден.'
-    module_install: 'Команда module:install не может быть выполнена внутри последовательности команд и должна быть запущена независимо.'
+    missing-file: 'You must provide a valid file path and name.'
+    invalid-file: 'The file "%s" does not exist.'
+    module-install: 'module:install command is not runnable inside a chain queue and must be run independently.'
     missing-environment-placeholders: 'Missing environment placeholder(s) "%s"'
     set-environment-placeholders: 'Set environment placeholders as:'
     missing-inline-placeholders: 'Missing inline placeholder(s) "%s"'
     set-inline-placeholders: 'Pass inline placeholders as:'
+    missing_file: 'Необходимо указать действительный путь и имя файла.'
+    invalid_file: 'Файл "%s" не найден.'
+    module_install: 'Команда module:install не может быть выполнена внутри последовательности команд и должна быть запущена независимо.'
 examples:
     -
         description: 'Providing a file option using full path.'

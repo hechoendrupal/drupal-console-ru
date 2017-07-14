@@ -1,3 +1,10 @@
 description: 'Включить представление'
 messages:
     enabled-successfully: 'Представление "%s" было включено успешно.'
+examples:
+    -
+        description: 'Enable content view'
+        execution: "drupal views:enable  content\n"
+    -
+        description: 'Enable frontpage view'
+        execution: "drupal views:enable  frontpage\n"

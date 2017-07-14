@@ -15,3 +15,7 @@ questions:
     plugin-id: 'Enter the plugin ID. NOTE: This corresponds to the CKEditor plugin name. It is the first argument of the CKEDITOR.plugins.add() function in the plugin.js file.'
     button-name: 'Enter the button name. NOTE: This corresponds to the CKEditor button name. They are the first argument of the editor.ui.addButton() or editor.ui.addRichCombo() functions in the plugin.js file.'
     button-icon-path: 'Enter the button icon path'
+examples:
+    -
+        description: 'Generate CKEditor button specifying the module name, the class, the label, its id, the button name and the icon path'
+        execution: "drupal generate:plugin:ckeditorbutton  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultCKEditorButton\"  \\\n  --label=\"Default ckeditor button\"  \\\n  --plugin-id=\"default ckeditor button\"  \\\n  --button-name=\"Default ckeditor button\"  \\\n  --button-icon-path=\"modules/custom/modulename/js/plugins/default ckeditor button/images/icon.png\""

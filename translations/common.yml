@@ -25,7 +25,7 @@ questions:
     inputs:
         confirm: 'Вы хотите создать структуру формы?'
         label: 'Метка поля ввода'
-        machine_name: 'Машинное имя поля ввода'
+        machine-name: 'Input machine name'
         permission: 'Вы хотите создать права доступа?'
         type: Тип
         invalid: 'Тип поля "%s" неверен.'
@@ -34,6 +34,7 @@ questions:
         weight: 'Вес для поля ввода'
         title: Заголовок
         fieldset: 'Набор полей'
+        machine_name: 'Машинное имя поля ввода'
 errors:
     module-dependency: 'Отсутствует зависимость модуля, "%s" не установлен. Попробуйте module:install чтоб установить его.'
     class-name-empty: 'Имя класса не может быть пустым'

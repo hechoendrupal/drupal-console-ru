@@ -5,6 +5,7 @@ messages:
     welcome: 'Добро пожаловать в команду cache:rebuild'
     rebuild: 'Перестроение кеша(-ей), пожалуйста, подождите.'
     completed: 'Очистка кеша(-ей) выполнена.'
+    invalid-cache: 'Cache "%s" is invalid.'
     invalid_cache: 'Невалидный кеш "%s".'
 questions:
     cache: 'Выберите кеш.'

@@ -20,3 +20,7 @@ questions:
 messages:
     inputs: "\nYou can add input fields to create special configurations in the block.\nThis is optional, press <info>enter</info> to <info>continue</info>"
     invalid-theme-region: 'Region "%s" is invalid'
+examples:
+    -
+        description: 'Generate a plugin block in the header region with an input field specifying the module name, the class, the label, its id, the region and the input'
+        execution: "drupal generate:plugin:block  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultBlock\"  \\\n  --label=\"Default block\"  \\\n  --plugin-id=\"default_block\"  \\\n  --theme-region=\"header\"  \\\n  --inputs='\"name\":\"inputtext\", \"type\":\"text_format\", \"label\":\"InputText\", \"options\":\"\", \"description\":\"Just an input text\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'"
