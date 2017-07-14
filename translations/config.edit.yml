@@ -6,6 +6,7 @@ questions:
     config-name: 'Выберите конфигурацию'
 messages:
     no-directory: 'Произошла ошибка во время создания каталога'
+    choose-configuration: 'Choose a configuration'
 examples:
     -
         description: 'Edit system cron configurations with "vim" (default editor).'
