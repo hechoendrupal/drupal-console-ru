@@ -19,3 +19,7 @@ messages:
     theme-default-success: 'Тема "%s" успешно установлена темой по-умолчанию'
     disabled-themes: 'Только неустановленные темы будут перечислины в автозаполнении'
     invalid-theme-default: 'Опция default действует только для одной темы'
+examples:
+    -
+        description: 'Install theme specifying the name'
+        execution: "drupal theme:install  mytheme\n"

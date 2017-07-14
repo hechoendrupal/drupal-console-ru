@@ -35,3 +35,7 @@ warnings:
 errors:
     invalid-core: 'The core version "%s" is invalid.'
     directory-exists: 'The target directory "%s" is not empty.'
+examples:
+    -
+        description: 'Generate a module specifying the module name, machine name, the path, its description, drupal core and the package name. In this example the composer file, the unit test and twig template are generated too'
+        execution: "drupal generate:module  \\\n  --module=\"modulename\"  \\\n  --machine-name=\"modulename\"  \\\n  --module-path=\"/modules/custom\"  \\\n  --description=\"My Awesome Module\"  \\\n  --core=\"8.x\"  \\\n  --package=\"Custom\"  \\\n  --module-file  \\\n  --composer  \\\n  --test  \\\n  --twigtemplate"

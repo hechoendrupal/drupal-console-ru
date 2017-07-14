@@ -1,6 +1,11 @@
 description: 'Returns the relative path to the theme (or absolute path)'
 arguments:
+    theme: 'Theme name'
     module: 'The Theme name (machine name)'
 options:
     absolute: 'Return theme absolute path'
 messages: null
+examples:
+    -
+        description: 'Get the path of mytheme'
+        execution: "drupal theme:path  mytheme\n"

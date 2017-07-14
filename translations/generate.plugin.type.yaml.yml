@@ -11,3 +11,7 @@ questions:
     class: 'Enter the plugin type class name'
     plugin-name: 'Enter the plugin type machine name'
     plugin-file-name: 'Enter the plugin file name (e.g. MODULE.plugin.filename.yml)'
+examples:
+    -
+        description: 'Generate a plugin with Yaml discovery specifying module name, class name, plugin name and plugin file name'
+        execution: "drupal generate:plugin:type:yaml  \\\n  --module=\"modulename\"  \\\n  --class=\"ExamplePlugin\"  \\\n  --plugin-name=\"example_plugin\"  \\\n  --plugin-file-name=\"example.plugin\"\n"

@@ -18,3 +18,7 @@ messages:
     invalid-theme-default: 'Option default is only valid for one theme'
     error-default-theme: 'Theme "%s" is the default theme and cannot be uninstalled.'
     error-admin-theme: 'Theme "%s" is the admin theme and cannot be uninstalled.'
+examples:
+    -
+        description: 'Uninstall theme specifying the name'
+        execution: "drupal theme:uninstall  mytheme\n"

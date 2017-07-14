@@ -10,3 +10,7 @@ messages:
 errors:
     no-key: 'You must provide a State key to override.'
     no-value: 'You must provide a State value to set.'
+examples:
+    -
+        description: 'Override state value specifying the state name and the new value'
+        execution: "drupal state:override  comment.node_comment_statistics_scale \"!!float 1\"\n"

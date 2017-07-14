@@ -10,3 +10,7 @@ questions:
     class: 'Enter the plugin class name'
     label: 'Enter the plugin label'
     plugin-id: 'Enter the plugin id'
+examples:
+    -
+        description: 'Generate a image formatter plugin specifying the module name, the class, its label and the plugin id'
+        execution: "drupal generate:plugin:imageformatter  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleImageFormatter\"  \\\n  --label=\"Example image formatter\"  \\\n  --plugin-id=\"example_image_formatter\"\n"

@@ -6,3 +6,7 @@ messages:
     name: Name
     provider: Provider
     views: Views
+examples:
+    -
+        description: 'List of views plugins'
+        execution: "drupal debug:views:plugins\n"

@@ -14,6 +14,3 @@ examples:
     -
         description: 'If export will be in a compressed file and/or if uuid and config hashes will be removed.'
         execution: "drupal config:export  \\\n  --directory=\"path/to/export\" \\\n  --tar \\\n  --remove-uuid \\\n  --remove-config-hash\n"
-arguments:
-    directory: 'Задать директорию для экспорта конфигурации.'
-    tar: 'Если установлено, то конфигурация будет экспортирована в архив.'

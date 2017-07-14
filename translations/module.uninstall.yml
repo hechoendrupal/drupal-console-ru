@@ -13,3 +13,7 @@ messages:
     success: 'The following module(s) were uninstalled successfully: "%s"'
     missing: 'Unable to install modules "%s" due to missing modules "%s"'
     composer-success: 'The folowing module(s) were removed from Composer: "%s"'
+examples:
+    -
+        description: 'Uninstall the module specifying the module name'
+        execution: "drupal module:uninstall  modulename\n"

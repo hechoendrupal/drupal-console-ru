@@ -4,3 +4,7 @@ arguments:
 messages:
     rebuilding: 'Перестройка маршрутов, подождите секунду'
     completed: 'Перейстройка маршрута(ов) закончена.'
+examples:
+    -
+        description: 'Rebuild routes'
+        execution: 'drupal router:rebuild'

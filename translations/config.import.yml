@@ -16,7 +16,3 @@ examples:
     -
         description: 'Provide a configuration directory'
         execution: "drupal config:import  \\\n  --directory=/path/to/config/dir\n"
-arguments:
-    file: 'Путь к файлу конфигурации.'
-    directory: 'Путь к директории для импорта конфигурации.'
-    remove-files: 'Удалить файлы после синхронизации.'
