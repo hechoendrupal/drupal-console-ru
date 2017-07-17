@@ -3,26 +3,25 @@ DrupalConsole Russian Language / Pусский язык
 
 # Версия на русском языке
 
-## Usage
+## Использование
 
-Drupal Console project it's installed per each Drupal 8 website with English language by default.
-
-To install Drupal Console package for Russian language run the following instructions
+Команда для установки Drupal Console на русском языке:
 
 ```
 $ composer require drupal/console-ru
 ```
 
-### Install Drupal Console
+### Установка Drupal Console
 
-To install the appropriate version of Drupal Console project for your drupal installation, run the following composer command
+Команда для установки Drupal Console:
 
 ```
 $ composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader
 ```
 
-### Install Drupal Console launcher
+### Устанока пуского файла Drupal Console
 
+Пусковой файл Drupal Console был создан, чтобы избежать конфиликов между основными и придаточными версиями Drupal и Drupal Console. 
 In order to avoid conflicts between Drupal release and have a Drupal Console version between major and minor releases in Drupal,  a Drupal Console launcher was created. n order to facilitate to load the Drupal Console commands available to each
 Drupal 8 website,
  
@@ -59,6 +58,6 @@ $ git merge upstream/master
 
 N.B: Push your changes to your forked repository in order to create PR per day to avoid any conflicts with other contributors.
 
-# English Version
+# Английская версия
 
-Check instructions at [https://github.com/hechoendrupal/drupal-console-en](https://github.com/hechoendrupal/drupal-console-en)
+Инструкция на английском [https://github.com/hechoendrupal/drupal-console-en](https://github.com/hechoendrupal/drupal-console-en)
