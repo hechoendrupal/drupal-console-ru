@@ -1,12 +1,12 @@
-description: 'Debug entities available in the system'
-help: 'The <info>entity:debug</info> command helps get a list of entities.'
+description: 'Отладка сущностей, имеющихся в системе'
+help: 'Команда <info>entity:debug</info> помогает получить список сущностей.'
 arguments: null
 questions: null
 messages: null
 table-headers:
-    entity-name: 'Entity name'
-    entity-type: 'Entity type'
+    entity-name: 'Имя сущности'
+    entity-type: 'Тип сущности'
 examples:
     -
-        description: 'Displays the available entities'
+        description: 'Вывести имеющиеся сущности'
         execution: "drupal debug:entity\n"

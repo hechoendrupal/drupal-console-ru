@@ -18,5 +18,5 @@ questions:
     sure: 'Вы уверенны что хотите удалить все конфигурации'
 examples:
     -
-        description: 'Provide a config type and a config name'
+        description: 'Указание типа и имени конфигурации'
         execution: 'drupal config:delete active all'

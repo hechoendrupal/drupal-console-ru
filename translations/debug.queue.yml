@@ -1,9 +1,9 @@
-description: 'Display the queues of your application'
+description: 'Показать очереди вашего приложения'
 messages:
-    queue: Queue
-    items: Items
-    class: Class
+    queue: Очередь
+    items: Элементы
+    class: Класс
 examples:
     -
-        description: 'Displays the queues of the application'
+        description: 'Показывает очереди вашего приложения'
         execution: "drupal debug:queue\n"
