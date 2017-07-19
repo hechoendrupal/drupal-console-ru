@@ -21,11 +21,9 @@ $ composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader
 
 ### Устанока пуского файла Drupal Console
 
-Пусковой файл Drupal Console был создан, чтобы избежать конфиликов между основными и придаточными версиями Drupal и Drupal Console. 
-In order to avoid conflicts between Drupal release and have a Drupal Console version between major and minor releases in Drupal,  a Drupal Console launcher was created. n order to facilitate to load the Drupal Console commands available to each
-Drupal 8 website,
- 
-Following the instruction below you could install the global application for Drupal Console launcher. 
+Пусковой файл Drupal Console был создан, чтобы избежать конфиликов между основными и придаточными версиями Drupal и Drupal Console. Приемущество пускового файла в том, что команды Drupal Console доступны каждой установке Drupal на данной машине.
+
+Чтобы устновть пусковой файл Drupal Console глобально, выполните ряд следующих комманд
 
 ```
 $ curl https://drupalconsole.com/installer -L -o drupal.phar
@@ -36,11 +34,11 @@ $mv drupal.phar /usr/local/bin/drupal
 $ chmod +x /usr/local/bin/drupal
 ```
 
-### Contribute
+### Содействие и помощь
 
-If you want to contribute to this translation, you need to follow this steps
+Если Вы хотите помочь с переводом, следуйте иструкции
 
-- Fork this repository following this link [https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box](https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box)
+- Инструкция как создать ответвленFork this repository following this link [https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box](https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box)
 - Clone your repostory forked in your local machine.
 - Set up upstream
 
@@ -60,4 +58,4 @@ N.B: Push your changes to your forked repository in order to create PR per day t
 
 # Английская версия
 
-Инструкция на английском [https://github.com/hechoendrupal/drupal-console-en](https://github.com/hechoendrupal/drupal-console-en)
+Инструкция на английском доступна по ссылке [https://github.com/hechoendrupal/drupal-console-en](https://github.com/hechoendrupal/drupal-console-en)
