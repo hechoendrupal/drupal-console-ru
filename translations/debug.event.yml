@@ -1,16 +1,16 @@
-description: 'Display current events '
-help: 'The <info>event:debug</info> command helps you debug events.'
+description: 'Показать текущие события'
+help: 'Команда <info>event:debug</info> помогает в отладке событий.'
 arguments:
-    event: 'Event to debug'
+    event: 'Событие для отладки'
 messages:
-    event: 'Event Name'
-    class: Class
-    method: Method
-    no-events: 'This event does not exist, try to execute command: event:debug'
+    event: 'Имя события'
+    class: 'Класс'
+    method: 'Метод'
+    no-events: 'Запрашиваемое событие не существует, попробуйте выполнить следующую команду: debug:event'
 examples:
     -
-        description: 'List all the events that could be debugged'
-        execution: 'drupal debug:evet'
+        description: 'Вывести все события, доступные для отладки'
+        execution: 'drupal debug:event'
     -
-        description: 'Show the information for the kernel.request event'
+        description: 'Показать информацию о событии kernel.request'
         execution: 'drupal debug:event kernel.request'

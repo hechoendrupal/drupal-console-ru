@@ -1,14 +1,14 @@
-description: 'Displays all user permissions.'
+description: 'Показывает все права пользователей.'
 help: "Display all user permissions and also list all user permissions from a specific user role.\n\nList all user permissions:\n<info>drupal permission:debug</info>\n\nList all user permissions from a user role\n<info>drupal permission:debug authenticated</info>\n"
 arguments:
-    role: 'User role'
+    role: 'Пользовательская роль'
 messages:
-    role-error: 'Role "%s" does not exist. Please use an existing user role.'
+    role-error: 'Роль "%s" не найдена. Пожалуйста, используйте существующую роль.'
 table-headers:
-    permission-name: 'Permission name'
-    permission-label: 'Permission Label'
-    permission-role: Role
+    permission-name: 'Машинное имя права'
+    permission-label: 'Имя права'
+    permission-role: 'Роль'
 examples:
     -
-        description: 'Displays all the permissions availables on the site'
+        description: 'Показывает все права, доступные на сайте'
         execution: "drupal debug:permission\n"

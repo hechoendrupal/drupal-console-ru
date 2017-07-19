@@ -1,13 +1,13 @@
-description: 'List all known local and remote sites.'
-help: 'The <info>site:debug</info> list all known local and remote sites.'
+description: 'Вывести список всех заданных локальных и удаленных сайтов.'
+help: 'Команда <info>site:debug</info> выводит список всех заданных локальных и удаленных сайтов.'
 messages:
-    site: Site
-    host: Host
-    root: Root
-    not-sites: 'No sites defined'
-    invalid-site: 'Invalid site name'
-    private-key: 'Error with private key'
-    connect-error: 'Error connecting to remote machine'
+    site: 'Сайт'
+    host: 'Хост'
+    root: 'Корень'
+    not-sites: 'Не задано ни одного сайта'
+    invalid-site: 'Некорректное имя сайта'
+    private-key: 'Ошибка с приватным ключом'
+    connect-error: 'Ошибка удаленного подключения'
     directory-not-found: 'Sites local directory not found'
 options:
     target: Target

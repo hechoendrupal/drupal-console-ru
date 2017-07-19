@@ -1,8 +1,8 @@
-description: 'List user Drupal Console settings.'
+description: 'Вывести пользовательские настройки Drupal Console.'
 messages:
-    config-key: 'Config key'
-    config-value: 'Config value'
-    config-file: 'Config file'
+    config-key: 'Ключ конфигурации'
+    config-value: 'Значение конфигурации'
+    config-file: 'Файл конфигурации'
 examples:
     -
         description: ''

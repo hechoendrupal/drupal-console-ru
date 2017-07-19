@@ -1,9 +1,9 @@
-description: 'List image styles on the site'
+description: 'Вывести список стилей изображений на сайте'
 messages:
-    styles-list: 'Image Styles defined in the site'
-    styles-label: Label
-    styles-name: 'Machine Name'
+    styles-list: 'Стили изображений, настроенные на сайте'
+    styles-label: 'Название'
+    styles-name: 'Машинное имя'
 examples:
     -
-        description: 'List all images styles on the site'
+        description: 'Вывести список всех стилей изображений на сайте'
         execution: "drupal debug:image:styles\n"
