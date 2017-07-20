@@ -1,20 +1,20 @@
-description: 'Adds/removes a role for a given user'
-help: 'The <info>user:role</info> command helps you to add or remove a role to a user.'
-welcome: 'Welcome to the Drupal user rule'
+description: 'Добавить/отнять пользовательскую роль'
+help: 'С помощью команды <info>user:role</info> мождо дать или отнять пользовательскую роль.'
+welcome: 'Интерфейс для пользовательских ролей Drupal'
 arguments:
-    roles: 'Roles to add or remove. Please provide the machine name (only one)'
-    operation: 'Add or remove'
-    user: 'The affected user (only one)'
+    roles: 'Список ролей. Используйте машинное имя (не больше одной)'
+    operation: 'Добавить (add) или отнять (remove)'
+    user: 'Пользователь (не больше одного)'
 messages:
-    bad-arguments: 'Some arguments are missing! Please, provide all the following arguments: [add/remove] [username] [role]'
-    no-user-found: 'Username "%s" was not found!'
-    no-role-found: 'Role "%s" was not found!'
-    add-success: 'Username %1$s was added role %2$s sucessfully'
-    remove-success: 'Username %1$s was removed role %2$s sucessfully'
+    bad-arguments: 'Присутствуют не все аргументы! Формат команды: [add/remove] [username] [role]'
+    no-user-found: 'Пользователь "%s" не найден!'
+    no-role-found: 'Роль "%s" не найдена!'
+    add-success: 'Пользователь %1$s получил %2$s роль'
+    remove-success: 'Пользователь %1$s потерял %2$s роль'
 examples:
     -
-        description: 'Add administrator role to the user admin specifying the username and the role'
+        description: 'Дать пользователю admin привилегии администратора.'
         execution: 'drupal user:role  add admin administrator'
     -
-        description: 'Remove administrator role from the user admin specifying the username and the role'
+        description: 'Дать у пользователя admin привилегии администратора.'
         execution: "drupal user:role  remove admin administrator\n"
