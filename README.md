@@ -38,23 +38,24 @@ $ chmod +x /usr/local/bin/drupal
 
 Если Вы хотите помочь с переводом, следуйте иструкции
 
-- Инструкция как создать ответвленFork this repository following this link [https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box](https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box)
-- Clone your repostory forked in your local machine.
-- Set up upstream
+- Создайте ответвление кода. Инструкция по сслылке [https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box](https://github.com/hechoendrupal/drupal-console-ru#fork-destination-box)
+- Склонируйте код локально.
+- Добавте родительский код (upstream) в отслеживаемые
 
-In order to be updated with other contribution you must to setup a connected with main repository using the following git command
+Команда для добавления родительского кода (upstream) в отслеживаемые для своевременного уведомления об обновлениях родительского кода.
 
 ```
 $ git remote add upstream git@github.com:hechoendrupal/drupal-console-ru.git
 ```
 
-To fetch the latest contribution before to start, you must run the next commands
+Команда для скачивания последних обновлений родительского кода локально
+
 ```
 $ git fetch upstream
 $ git merge upstream/master
 ```
 
-N.B: Push your changes to your forked repository in order to create PR per day to avoid any conflicts with other contributors.
+Внимание: сохранияйте свои изменения в ответвленный код и создайте запорос на обновление родительского кода (pull request) своевременно, чтобы избежать конфликтов с одительским кодом.
 
 # Английская версия
 
