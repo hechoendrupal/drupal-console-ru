@@ -1,10 +1,10 @@
 description: 'Отключить представление'
 messages:
-    disabled-successfully: 'Представление "%s" было отключено успешно.'
+    disabled-successfully: 'Представление "%s" отключено.'
 examples:
     -
-        description: 'Disable content view'
+        description: 'Отключить представление для отображения данных'
         execution: "drupal views:disable  content\n"
     -
-        description: 'Disable frontpage view'
+        description: 'Отключить представление на главной странице'
         execution: "drupal views:disable  frontpage\n"
