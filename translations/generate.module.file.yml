@@ -1,11 +1,11 @@
-description: 'Generate a .module file'
-help: 'The <info>generate:module:file</info> command helps you generates a new .module file'
-welcome: 'Welcome to the Drupal module generator'
+description: 'Сгенерировать файл .module'
+help: 'Команда <info>generate:module:file</info> позволяет вам сгенерировать новый файл .module'
+welcome: 'Добро пожаловать в Drupal генератор модулей'
 options:
-    module: 'The Module name'
+    module: 'Имя модуля'
 questions:
-    module: 'Enter the new module name'
+    module: 'Введите имя нового модуля'
 examples:
     -
-        description: 'Generate the .module file specifying the module name'
+        description: 'Сгенерировать файл .module, указав имя модуля'
         execution: "drupal generate:module:file  \\\n  --module=\"modulename\""

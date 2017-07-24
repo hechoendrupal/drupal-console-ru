@@ -1,21 +1,21 @@
-description: 'Displays current users for the application'
-help: 'The <info>user:debug</info> command helps you get current users.'
-welcome: 'Welcome to the Drupal user debug'
+description: 'Выводит актуальных пользователей для приложения'
+help: 'Команда <info>user:debug</info> помогает вам получить аткуальных пользователей.'
+welcome: 'Добро пожаловать в отладку Drupal пользователей'
 options:
-    roles: 'Roles to filter debug'
-    limit: 'How many users would you listed in debug'
-    uid: 'Filters the result list by uids [between quotes separated by spaces]'
-    username: 'Filters the result list by usernames [between quotes separated by spaces]'
-    mail: 'Filters the result list by user''s e-mail [between quotes separated by spaces]'
+    roles: 'Роли для фильтрации отладочной информации'
+    limit: 'Сколько вывести пользователей в отладочной информации'
+    uid: 'Фильтрует результирующий список по uid [в кавычках, разделенные пробелами]'
+    username: 'Фильтрует результирующий список по именам пользователей [в кавычках, разделенные пробелами]'
+    mail: 'Фильтрует результирующий список по адресам электронной почты пользователей [в кавычках, разделенные пробелами]'
 questions:
-    roles: 'Select role(s) to be used to filter user debug list'
-    limit: 'Enter how many users would you like to show'
+    roles: 'Выберите роль/роли для фильтрации списка пользователей в отладочной информации'
+    limit: 'Введите, сколько пользователей вы бы хотели вывести'
 messages:
-    user-id: 'User ID'
-    username: Username
-    roles: Roles
-    status: Status
+    user-id: 'Идентификатор пользователя'
+    username: 'Имя пользователя'
+    roles: 'Роли'
+    status: 'Статус'
 examples:
     -
-        description: 'Users list on the site'
+        description: 'Список пользователей на сайте'
         execution: "drupal debug:user\n"
