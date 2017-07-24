@@ -1,19 +1,19 @@
-description: 'Generate commands for the console.'
-help: 'The <info>generate:command</info> command helps you generate a new command.'
-welcome: 'Welcome to the Drupal Command generator'
+description: 'Сгенерировать команды для консоли.'
+help: 'Команда <info>generate:command</info> позволяет вам сгенерировать новую команду.'
+welcome: 'Добро пожаловать в Drupal генератор команд'
 options:
-    module: 'The name of the Module (that will contain the command).'
-    controller-title: 'Controller title.'
-    class: 'The Class that describes the command. (Must end with the word ''Commmand'').'
-    name: 'The Command name.'
+    module: 'Название модуля (который будет содержать команду).'
+    controller-title: 'Имя контроллера.'
+    class: 'Имя класса, описывающего команду. (Должно оканчиваться словом ''Commmand'').'
+    name: 'Имя команды.'
     container-aware: 'Is the command aware of the drupal site installation when executed'
 questions:
     module: common.questions.module
-    class: 'Enter the Command Class. (Must end with the word ''Commmand'').'
-    name: 'Enter the Command name.'
+    class: 'Введите имя класса команды. (Должно оканчиваться словом ''Commmand'').'
+    name: 'Введите имя команды.'
     container-aware: 'Is the command aware of the drupal site installation when executed?.'
 messages:
-    title-not-empty: 'Title cannot be empty'
+    title-not-empty: 'Имя не может быть пустым'
 examples:
     -
         description: 'Generate a command specifying the extension name and type, its class and the name.'

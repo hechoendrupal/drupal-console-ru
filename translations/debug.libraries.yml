@@ -1,13 +1,13 @@
-description: 'Displays libraries available in application'
+description: 'Выводит библиотеки, доступные в приложении'
 options:
-    name: 'Enter Libraries Name'
+    name: 'Введите имя библиотеки'
 messages:
-    name: 'Extension with Libraries'
-    info: 'Libraries Information'
+    name: 'Расширение с библиотеками'
+    info: 'Информация о библиотеках'
 examples:
     -
-        description: 'List all available libraries'
+        description: 'Список всех доступных библиотек'
         execution: "drupal debug:libraries\n"
     -
-        description: 'List block library information'
+        description: 'Информация о block библиотеке'
         execution: "drupal debug:libraries block\n"

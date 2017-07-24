@@ -1,16 +1,16 @@
-description: 'Generate an implementation of hook_form_alter() or hook_form_FORM_ID_alter'
-help: 'The <info>"%s"</info> command helps you generate a new "%s"'
+description: 'Сгенерировать реализацию hook_form_alter() или hook_form_FORM_ID_alter()'
+help: 'Команда <info>"%s"</info> позволяет вам сгенерировать новый "%s"'
 options:
-    form-id: 'Form ID to alter'
+    form-id: 'Идентификатор формы для внесения изменений'
 messages:
-    inputs: "You can add form fields to modify form.\nThis is optional, press <info>enter</info> to <info>continue</info>"
-    loading-forms: 'Loading forms definition from Webprofiler module'
-    hide-form-elements: 'Optionally you can select form items for hide'
-    help-already-implemented: 'The hook form alter was already implemented in module "%s"'
+    inputs: "Вы можете добавить поля формы для внесения изменений в форму.\nЭто опционально, нажмите <info>enter</info> для <info>продолжения</info>"
+    loading-forms: 'Загрузка описания форм из модуля Webprofiler'
+    hide-form-elements: 'Опционально вы можете выбрать элементы формы, чтобы скрыть их'
+    help-already-implemented: 'hook_form_alter() уже реализован в модуле "%s"'
 examples:
     -
-        description: 'Generate a hook form alter for an empty form specifying the module name'
+        description: 'Сгенерировать hook_form_alter() для пустой формы, указав имя модуля'
         execution: "drupal generate:form:alter  \\\n  --module=\"modulename\""
     -
-        description: 'Generate a hook form alter with 2 fields specifying the module name and the inputs'
+        description: 'Сгенерировать hook_form_alter() с двумя полями, указав имя модуля и поля'
         execution: "drupal generate:form:alter  \\\n  --module=\"modulename\"  \\\n  --inputs='\"name\":\"inputtext\", \"type\":\"text_format\", \"label\":\"InputText\", \"options\":\"\", \"description\":\"Just an input text\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --inputs='\"name\":\"email\", \"type\":\"email\", \"label\":\"Email\", \"options\":\"\", \"description\":\"Just an email input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'"
