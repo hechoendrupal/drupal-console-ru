@@ -14,7 +14,7 @@ options:
     verbose: 'Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug'
     version: '<info>"%s"</info> версия <comment>"%s"</comment>'
     ansi: 'Сообщения в формате ANSI'
-    no-ansi: 'Disable ANSI output'
+    no-ansi: 'Отключить формат ANSI для сообщений'
     no-interaction: 'Не задавать вопросы'
     check-fix: 'Попытаться устранить ошибки.'
 arguments:
