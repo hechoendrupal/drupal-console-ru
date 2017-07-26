@@ -2,23 +2,23 @@ options:
     env: 'Имя среды окружения'
     no-debug: 'Выключение режима отладки'
     learning: 'Генерация подробного вывода'
-    generate-chain: 'Показывает парамметры и аргументы выполняемой команды как yaml вывод для передачи по цепочке'
-    generate-inline: 'Показывает парамметры и аргументы выполняемой команды одной строкой'
-    generate-doc: 'Показывает парамметры и аргументы выполняемой команды как markdown'
+    generate-chain: 'Показать параметры и аргументы выполняемой команды как yaml вывод для передачи по цепочке'
+    generate-inline: 'Показать параметры и аргументы выполняемой команды одной строкой'
+    generate-doc: 'Показать параметры и аргументы выполняемой команды в формате markdown'
     root: 'Указать корневую директорию Drupal для выполнения команд'
-    uri: 'URI сайта Drupal (в случае мультисайтингового окружения или запуска на альтернативном порту)'
+    uri: 'URI сайта Drupal (используется для Drupal в формате мультисайта или запуска на альтернативном порту)'
     'yes': 'Пропустить подтверждение и продолжить'
     target: 'Имя сайта, с которым вы хотите взаимодействовать (для локального или удаленного сайтов)'
-    help: 'Display this help message'
-    quiet: 'Do not output any message'
+    help: 'Показать дополнительное сообщение'
+    quiet: 'Не показывать сообщений'
     verbose: 'Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug'
     version: '<info>"%s"</info> версия <comment>"%s"</comment>'
-    ansi: 'Force ANSI output'
-    no-ansi: 'Disable ANSI output'
-    no-interaction: 'Do not ask any interactive question'
-    check-fix: 'Attempt to fix any missing configuration.'
+    ansi: 'Сообщения в формате ANSI'
+    no-ansi: 'Отключить формат ANSI для сообщений'
+    no-interaction: 'Не задавать вопросы'
+    check-fix: 'Попытаться устранить ошибки.'
 arguments:
-    command: 'The command to execute'
+    command: 'Используйте команду'
 messages:
     completed: 'Команда была выполнена успешно!'
     chain:
@@ -30,49 +30,49 @@ messages:
         generated: 'Созданные или обновленные файлы'
         copied: 'Скопированные файлы'
     learning:
-        route: "Для создания страниц необходимо определить маршруты для них.\nМаршрут сопостовляет URL-путь с контроллером. Он определяет какая функция\nили метод будет вызван при переходе по URL.\nЕсли пользователь переходит на http://drupal8.dev/{{ route.path }}, система\nмаршрутизации попытается найти маршрут для этого пути. В данном случае будет найдено\nсоответствие, и выполнит обратный вызов _controller. В данном случае обратный вызов\nопределен как класс\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\nи метод (\"{{ route.method }}\")."
+        route: "Необходимо определить маршрут для создания страницы.\nМаршрут сопоставляет URL-путь с методом или функцией в контроллере,\n которые будет вызваны при переходе по URL.\nПри переходе на http://drupal8.dev/{{ route.path }}, система попытается\n найти маршрут для пути {{ route.path }}. При наличии маршрута система\n выполнит обратный вызов функции контроллера. В данном случае обратный\n вызов определен как класс\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\nи метод (\"{{ route.method }}\")."
     autocomplete: "Bash or Zsh: Добавьте эту строку в конфигурационный файл вашей командной оболочки:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: Создайте символьную ссылку\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
     version: '<info>"%s"</info> version <comment>"%s"</comment>'
     disable:
         command:
-            error: 'Command: "%s" is deprecated.'
-            extra: 'You must execute: "%s" instead'
+            error: 'Команда: "%s" будет скоро удалена.'
+            extra: 'Рекомендуемая команда: "%s" вместо оригинальной'
 errors:
-    invalid-command: 'Команда "%s" не определена.'
-    renamed-command: 'Command "%s" was renamed, use "%s" instead.'
+    invalid-command: 'Команда "%s" не найдена.'
+    renamed-command: 'Команда "%s" недоступна в данной версии, используйте команду "%s".'
 site:
     messages:
-        path: 'Путь к директории сайта'
+        path: 'Путь к папке с Drupal'
     errors:
         settings: 'Для получения списка всех доступных команд сначала необходимо установить Drupal.'
         directory: 'Для получения списка всех доступных команд, необходимо запустить эту команду в корневой директории Drupal.'
-        not-installed: 'Drupal Console is not installed at: %s'
-        execute-composer: 'You must execute the following composer commands:'
-        missing-config-file: 'Missing configuration file, possible paths:'
-        missing-config-file-command: 'Execute "drupal init" command to generate one'
+        not-installed: 'Установка Drupal Console не найдена в данной папке: %s'
+        execute-composer: 'Необходимо выполнить следующие команды composer:'
+        missing-config-file: 'Файл конфигурации не найден. Возможно, что он находится здесь:'
+        missing-config-file-command: 'Необходимо выполнить команду "drupal init" чтобы сгенерировать файл конфигурации'
 user:
     messages:
-        path: 'Путь к домашней директории пользователя'
+        path: 'Путь к домашней папке пользователя'
 remote:
     errors:
-        passphrase-missing: 'Passphrase file is missing'
-        passphrase-empty: 'Passphrase file is empty'
-        private-missing: 'Private file is missing'
-        private-empty: 'Private file is empty'
-        private-invalid: 'Private file is invalid'
-        invalid-root: 'Invalid root directory'
-        console-not-found: 'Drupal Console not found on this site'
+        passphrase-missing: 'Файл с паролем не найден'
+        passphrase-empty: 'Файл с паролем пуст'
+        private-missing: 'Файл с приватным ключем не найден'
+        private-empty: 'Файл с приватным ключем пуст'
+        private-invalid: 'Файл с приватным ключем не соответствует стандарту'
+        invalid-root: 'Drupal не найден в данной папке'
+        console-not-found: 'Установка Drupal Console не найдена'
 gitbook:
     messages:
-        title: 'Available Drupal Console Commands'
-        note: Note
-        note-description: 'Drupal Console commands *must* be run from the root of a Drupal 8 installation'
-        command: 'Drupal Console Command'
-        command_description: 'The **"%s"** command "%s"'
-        usage: Usage
-        options: 'Available options'
-        option: Option
-        details: Details
-        arguments: 'Available arguments'
-        argument: Argument
-        examples: Examples
+        title: 'Список команд Drupal Console'
+        note: 'Внимание'
+        note-description: 'Команды Drupal Console *должны* запускаться в папке с Drupal 8'
+        command: 'Команда Drupal Console'
+        command_description: '**"%s"** команда "%s"'
+        usage: 'Использование'
+        options: 'Доступные параметры'
+        option: 'Команда'
+        details: 'Детали'
+        arguments: 'Доступные аргументы'
+        argument: 'Аргумент'
+        examples: 'Примеры'
