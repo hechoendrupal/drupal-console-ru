@@ -1,31 +1,31 @@
-description: 'Create users for the application'
-help: 'The <info>user:create</info> command helps you create users.'
-welcome: 'Welcome to the Drupal user create'
+description: 'Создание пользователей в приложении'
+help: 'Команда <info>user:create</info> создает пользователя.'
+welcome: 'Команда для создания пользователя'
 options:
-    username: 'User name to be created'
-    password: 'User password'
-    roles: 'User roles'
-    email: 'User email'
-    status: 'User status'
+    username: 'Имя нового пользователя'
+    password: 'Пароль пользователя'
+    roles: 'Роли пользователя'
+    email: 'Почтовый адрес пользователя'
+    status: 'Статус пользователя'
 questions:
-    username: 'User name to be created'
-    password: 'User password (empty to auto-generate)'
-    roles: 'User roles (empty to skip)'
-    email: 'User e-mail (empty to skip)'
-    status: 'User status (empty to skip)'
+    username: 'Имя нового пользователя'
+    password: 'UПароль пользователя (пароль генерируется автоматический при пустом значении)'
+    roles: 'Роли пользователя (не используется при пустом значении)'
+    email: 'Почтовый адрес пользователя (не используется при пустом значении)'
+    status: 'Статус пользователя (не используется при пустом значении)'
 messages:
-    user-id: 'User ID'
-    username: Username
-    password: Password
-    email: E-mail
-    roles: Roles
-    created: Created
-    status: Status
-    user-created: 'User "%s" was created successfully'
+    user-id: 'Идентефикатор пользователя'
+    username: 'Имя нового пользователя'
+    password: 'Пароль пользователя'
+    email: 'Почтовый адрес пользователя'
+    roles: 'Роли пользователя'
+    created: 'Дата создания пользователя'
+    status: 'Статус пользователя'
+    user-created: 'Пользователь "%s" добавлен'
 examples:
     -
-        description: 'Create user specifying username, password, role, email and status'
+        description: 'Создать активного пользователя с именем john, паролем p455w0rd, ролью authenticated и почтовым ящиком john@anexusit.com'
         execution: "drupal user:create  john p455w0rd  \\\n  --roles='authenticated'  \\\n  --email=\"john@anexusit.com\"  \\\n  --status=\"1\""
     -
-        description: 'Create admin user specifying username, password, role, email and status'
+        description: 'Создать активного пользователя с именем doe, паролем p455w0rd, ролью administrator и почтовым ящиком doe@anexusit.com'
         execution: "drupal user:create  doe p455w0rd  \\\n  --roles='administrator'  \\\n  --email=\"doe@anexusit.com\"  \\\n  --status=\"1\"\n"

@@ -1,11 +1,11 @@
-description: 'Возвращает одноразовый url для входа.'
+description: 'Генерирует одноразовую ссылку для входа.'
 options:
     user-id: 'Идентификатор пользователя.'
 messages:
-    url: 'Одноразовый вход для "%s": "%s"'
+    url: 'Вход по одноразовой ссылке для "%s": "%s"'
 errors:
     invalid-user: 'Не удалось загрузить пользователя (Идентификатор пользователя: "%s").'
 examples:
     -
-        description: 'Get one time login url for user id 1'
+        description: 'Сгенерировать одноразовую ссылку для входа пользователя с идентификатором 1'
         execution: "drupal user:login:url  1\n"
