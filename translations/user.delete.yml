@@ -1,24 +1,24 @@
-description: 'Delete users for the application'
-help: 'The <info>user:delete</info> command helps you delete users.'
-welcome: 'Welcome to the Drupal user delete'
+description: 'Удалить пользователей из приложения'
+help: 'Команда <info>user:delete</info> удаляет пользователей.'
+welcome: 'Команда удаления пользователей'
 options:
-    user-id: 'User id to be deleted'
-    roles: 'Roles associated to users to be deleted'
+    user-id: 'Идентефикатор пользователя, который будет удален'
+    roles: 'Пользователи с данной ролью будут удалены'
 questions:
-    user-id: 'User id to be deleted (empty to skip)'
-    roles: 'Select role(s) associated to used to be deleted'
+    user-id: 'Идентефикатор пользователя, который будет удален (empty to skip)'
+    roles: 'Выберете роль. Пользователи с данной ролью будут удалены'
 messages:
-    user-id: 'User ID'
-    username: Username
-    user-deleted: 'User "%s" was deleted successfully'
-    users-deleted: '"%s" users were deleted successfully'
+    user-id: 'Идентефикатор пользователя'
+    username: 'Имя пользователя'
+    user-deleted: 'Пользователь "%s" был удален'
+    users-deleted: 'Пользователи "%s" были удалены'
 errors:
-    invalid-user-id: 'User id "%s" is invalid'
-    invalid-user: 'User id "%s" is invalid'
+    invalid-user-id: 'Идентефикатор пользователя "%s" не найден'
+    invalid-user: 'Пользователь "%s" не найден'
 examples:
     -
-        description: 'Delete user specifying the id and the user role'
+        description: 'Удалить пользователя с идентефикатором 2 с ролью authenticated'
         execution: "drupal user:delete  \\\n  --user-id=\"2\"\n  --roles='authenticated'"
     -
-        description: 'Delete user specifying its id'
+        description: 'Удалить пользователя с идентефикатором 3'
         execution: "drupal user:delete  \\\n  --user-id=\"3\"\n"
