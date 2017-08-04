@@ -1,9 +1,9 @@
-description: 'Applying Entity Updates'
+description: 'Выполняется обновление сущностей'
 messages:
-    start: 'Starting the entity updates'
-    end: 'Finished the entity updates'
-    error: 'Error on Entity Updates'
+    start: 'Обновление сущностей стартовало'
+    end: 'Обновление сущностей завершено'
+    error: 'Ошибка во время обновления сущностей'
 examples:
     -
-        description: 'Update entities'
+        description: 'Обновить сущности'
         execution: "drupal update:entities\n"
