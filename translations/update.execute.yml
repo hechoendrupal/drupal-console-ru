@@ -1,6 +1,6 @@
-description: 'Выполнить конкретный update_N хук в модуле или выполнить все'
+description: 'Выполнить указанный update_N хук в модуле или выполнить все'
 options:
-    update-n: 'Конкретный update_N хук будет выполнен'
+    update-n: 'Указанный update_N хук будет выполнен'
 messages:
     no-module-updates: 'Нет доступных обновлений для модуля "%s"'
     executing-update: 'Выполнение функции обновления "%s" модуля "%s"'
@@ -8,5 +8,5 @@ messages:
     executing-required-previous-updates: 'Выполнение требуемых предыдущих обновлений'
 examples:
     -
-        description: 'Update all entities'
+        description: 'Выполнить все обновления'
         execution: "drupal update:execute\n"
