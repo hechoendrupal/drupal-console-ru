@@ -1,19 +1,19 @@
-description: 'Download theme in application'
+description: 'Скачать тему для приложения'
 arguments:
-    version: 'Theme version i.e 1.x-dev'
-    theme: 'the Theme name'
+    version: 'Версия темя, например 1.x-dev'
+    theme: 'имя темы'
 options:
-    composer: 'Use --composer option for manage the theme download with Composer'
-    version: 'Theme version i.e 1.x-dev'
+    composer: 'Опция --composer для скачивания с помощью приложения Composer'
+    version: 'Версия темя, например i.e 1.x-dev'
 messages:
-    no-releases: 'There aren''t any releases for theme "%s"'
-    getting-releases: 'Getting releases for theme "%s"'
-    downloading: 'Downloading theme "%s" release "%s"'
-    downloaded: 'Theme "%s" version "%s" was downloaded successfully at "%s"'
-    select-release: 'Please select your favorite release'
-    outside-drupal: 'Drupal root can''t be determined. Use --root to set the destination, current folder will be used instead of.'
-    error-creating-folder: 'Error crearing folder "%s", please check your permssions'
+    no-releases: 'Не найдено ни одной версии темы "%s"'
+    getting-releases: 'Скачиваю список версий для темы "%s"'
+    downloading: 'Скачиваю тему "%s" с версией "%s"'
+    downloaded: 'Тема "%s" с версией "%s" успешно скачана в "%s"'
+    select-release: 'Выберете версию'
+    outside-drupal: 'Drupal не найден. Используйие опицию --root для указания пути к Drupal.'
+    error-creating-folder: 'Ошибка создания папки "%s". Проверьте права доступа'
 examples:
     -
-        description: 'Download theme specifying name and version'
+        description: 'Скачать версию 7.x-1.2 темы Alina'
         execution: "drupal theme:download  Alina 7.x-1.2\n"
