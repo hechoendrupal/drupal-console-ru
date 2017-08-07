@@ -1,11 +1,11 @@
-description: 'Returns the relative path to the theme (or absolute path)'
+description: 'Относительный путь к теме (или абсолютный)'
 arguments:
-    theme: 'Theme name'
-    module: 'The Theme name (machine name)'
+    theme: 'Имя темы'
+    module: 'Машинное имя темы'
 options:
-    absolute: 'Return theme absolute path'
+    absolute: 'Абсолютный путь к теме'
 messages: null
 examples:
     -
-        description: 'Get the path of mytheme'
+        description: 'Путь к теме mytheme'
         execution: "drupal theme:path  mytheme\n"
