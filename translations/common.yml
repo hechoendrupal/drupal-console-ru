@@ -1,18 +1,18 @@
 options:
-    class: 'Class name'
+    class: 'Имя класса'
     events: 'Загрузить события из контейнера'
     module: 'Имя модуля.'
-    extension: 'The extension name.'
-    extension-type: 'The extension type.'
+    extension: 'Имя расширения.'
+    extension-type: 'Тип расширения.'
     services: 'Загрузка сервисов из контейнера.'
     tags: 'Задать теги сервисов из контейнера.'
     inputs: 'Создание полей ввода в форме.'
     permissions: 'Создание прав доступа.'
 questions:
-    class: 'Enter the Class name'
+    class: 'Введите имя класса'
     module: 'Введите имя модуля'
-    extension: 'Enter the extension name'
-    extension-type: 'Enter the extension type'
+    extension: 'Введите имя расширения'
+    extension-type: 'Введите тип расширения'
     confirm: 'Вы подтвеждаете создание?'
     canceled: 'Команда создания отменана.'
     events:
@@ -25,7 +25,7 @@ questions:
     inputs:
         confirm: 'Вы хотите создать структуру формы?'
         label: 'Метка поля ввода'
-        machine-name: 'Input machine name'
+        machine-name: 'Введите машинное имя'
         permission: 'Вы хотите создать права доступа?'
         type: Тип
         invalid: 'Тип поля "%s" неверен.'
