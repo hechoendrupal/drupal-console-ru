@@ -2,21 +2,18 @@ description: 'Последовательное выполнение команд
 options:
     file: 'Определенный пользователем файл содержащий команды на выполнение.'
 questions:
-    chain-file: 'Select chain file to execute'
+    chain-file: 'Выберите файл с последовательностью команд (chain) для извлечения'
 messages:
-    missing-file: 'You must provide a valid file path and name.'
-    invalid-file: 'The file "%s" does not exist.'
-    module-install: 'module:install command is not runnable inside a chain queue and must be run independently.'
-    missing-environment-placeholders: 'Missing environment placeholder(s) "%s"'
-    set-environment-placeholders: 'Set environment placeholders as:'
-    missing-inline-placeholders: 'Missing inline placeholder(s) "%s"'
-    set-inline-placeholders: 'Pass inline placeholders as:'
-    select-value-for-placeholder: 'Select value for %s placeholder'
-    enter-value-for-placeholder: 'Enter value for %s placeholder'
     missing_file: 'Необходимо указать действительный путь и имя файла.'
     invalid_file: 'Файл "%s" не найден.'
     module_install: 'Команда module:install не может быть выполнена внутри последовательности команд и должна быть запущена независимо.'
+    missing-environment-placeholders: 'Отсутствующие заменители окружения "%s"'
+    set-environment-placeholders: 'Установить заменители окружения как:'
+    missing-inline-placeholders: 'Отсутствующие встроенные заменители "%s"'
+    set-inline-placeholders: 'Передать встроенный заменитель как:'
+    select-value-for-placeholder: 'Выберите значение для %s заменителя'
+    enter-value-for-placeholder: 'Введите значение для %s заменителя'
 examples:
     -
-        description: 'Providing a file option using full path.'
+        description: 'Предоставление опции file, используя полный путь до файла.'
         execution: "drupal chain \\\n  --file=\"/path/to/file/chain-file.yml\"\n"
