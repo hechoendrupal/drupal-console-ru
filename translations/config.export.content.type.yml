@@ -5,14 +5,14 @@ questions:
     content-type: 'Тип материала для экспорта'
     optional-config: 'Экспорт типа материала в модуль как дополнительную конфигурацию'
 messages:
-    content-type-exported: 'Exporting content type'
+    content-type-exported: 'Экспорт типа материала'
     content_type_exported: 'Экспорт типа материала'
 options:
     optional-config: 'Экспорт типа материала как дополнительную YAML конфигурацию в ваш модуль'
 examples:
     -
-        description: 'Provide a content type  and module name'
+        description: 'Предоставление типа материала и имя модуля'
         execution: "drupal config:export:content:type page \\\n  --module=\"demo\""
     -
-        description: 'If you want export content type provide the optional config'
+        description: 'Если вы хотите экспортировать тип материала предоставьте дополнительные настройки'
         execution: "drupal config:export:content:type page \\\n  --module=\"demo\" \\\n  --optional-config \n"
