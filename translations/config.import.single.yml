@@ -7,12 +7,12 @@ questions:
     directory: 'Введите путь откуда файлы будут импортированы.'
     name: 'Введите имя конфигурации'
 messages:
-    missing-file: 'Опция file отсутсвует.'
+    missing-file: 'Опция file отсутствует.'
     empty-value: 'Значение не может быть пустым'
     success: 'Кофигурация "%s", импортирована.'
 examples:
     -
-        description: 'Предоставление опции file для указанию полного пути к файлу.'
+        description: 'Предоставление опции file для указания полного пути к файлу.'
         execution: "drupal config:import:single \\\n  --file=\"/path/to/file/block.block.default_block.yml\""
     -
         description: 'Предоставление опций file и directory'
