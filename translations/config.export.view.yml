@@ -13,8 +13,8 @@ options:
     include-module-dependencies: 'Включить зависимости модуля в info YAML файл модуля'
 examples:
     -
-        description: 'Provide a view id'
+        description: 'Предоставьте id представления'
         execution: 'drupal config:export:view viewid'
     -
-        description: 'You can provide the interactive values like parameter.'
+        description: 'Вы можете предоставить интерактивные значения как параметры.'
         execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
