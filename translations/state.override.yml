@@ -1,16 +1,16 @@
-description: 'Override a State key.'
-help: 'Override a State key.'
+description: 'Перезаписывает значение состояния по ключу.'
+help: 'Перезаписывает значение состояния по ключу.'
 arguments:
-    key: 'The State key to override.'
-    value: 'The State value to set.'
+    key: 'Ключ состояния значение, которого будет перезаписанно.'
+    value: 'Значение состояния, которое будет установленно.'
 messages:
-    key: 'State key'
-    original: 'Original value'
-    override: 'Override value'
+    key: 'Ключ состояния'
+    original: 'Оригинальное значение'
+    override: 'Перезаписываемое значение'
 errors:
-    no-key: 'You must provide a State key to override.'
-    no-value: 'You must provide a State value to set.'
+    no-key: 'Вы должны предоставить ключ состояния для перезаписи.'
+    no-value: 'Вы должны предоставить значение состояния, которое будет установленно.'
 examples:
     -
-        description: 'Override state value specifying the state name and the new value'
+        description: 'Перезаписывает состояние с указанным именем и новым значением'
         execution: "drupal state:override  comment.node_comment_statistics_scale \"!!float 1\"\n"
