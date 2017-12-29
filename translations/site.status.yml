@@ -1,40 +1,40 @@
-description: 'View current Drupal Installation status'
+description: 'Просмотр статуса текущей установки Drupal'
 messages:
-    application: Application
-    system: 'System Info'
+    application: Приложение
+    system: 'Системная информация'
     hash-salt: 'Hash salt'
-    console: 'Drupal Console version'
-    database: 'Database connection'
-    driver: Driver
-    host: Host
-    port: Port
-    username: Username
-    password: Password
-    theme: Themes
-    connection: Connection
-    theme-default: 'Default theme'
-    theme-admin: 'Admin theme'
-    directory: Directories
-    directory-root: 'Site root directory'
-    directory-temporary: 'Site temporary directory'
-    directory-theme-default: 'Default theme directory'
-    directory-theme-admin: 'Admin theme directory'
-    current-version: 'Current Drupal ("%s")'
-    not-installed: 'Drupal is not installed'
+    console: 'Версия Drupal Console'
+    database: 'Имя базы данных'
+    driver: Драйвер
+    host: Хост
+    port: Порт
+    username: 'Имя пользователя'
+    password: Пароль
+    theme: Темы
+    connection: Соединение
+    theme-default: 'Тема по умолчанию'
+    theme-admin: 'Тема административной части сайта'
+    directory: Каталоги
+    directory-root: 'Корневой каталог сайта'
+    directory-temporary: 'Каталог временных файлов сайта'
+    directory-theme-default: 'Каталог темы по умолчанию'
+    directory-theme-admin: 'Каталог темы административной части сайта'
+    current-version: 'Текущая версия Drupal ("%s")'
+    not-installed: 'Drupal не установлен'
     hash_salt: 'Hash salt'
-    theme_default: 'Default theme'
-    theme_admin: 'Admin theme'
-    directory_root: 'Site root directory'
-    directory_temporary: 'Site temporary directory'
-    directory_theme_default: 'Default theme directory'
-    directory_theme_admin: 'Admin theme directory'
-    current_version: 'Current Drupal version ("%s")'
-    not_installed: 'Drupal is not installed'
-    not_available: 'Not available'
-    configuration: Configuration
-    active: 'Active config path'
-    staging: 'Staging config path'
+    theme_default: 'Тема по умолчанию'
+    theme_admin: 'Тема административной части сайта'
+    directory_root: 'Корневой каталог сайта'
+    directory_temporary: 'Каталог временных файлов сайта'
+    directory_theme_default: 'Каталог темы по умолчанию'
+    directory_theme_admin: 'Каталог темы административной части сайта'
+    current_version: 'Текущая версия Drupal ("%s")'
+    not_installed: 'Drupal не установлен'
+    not_available: 'Недоступен'
+    configuration: Конфигурация
+    active: 'Активный путь конфигурации'
+    staging: 'Путь конфигурации для Staging'
 examples:
     -
-        description: 'Get drupal installation status specifying the output format as table'
+        description: 'Получает информацию об установки drupal в виде таблицы'
         execution: "drupal site:status  \\\n  --format=\"table\"\n"
