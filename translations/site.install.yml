@@ -3,7 +3,7 @@ arguments:
     profile: 'Профайл Drupal, который будет установлен'
     langcode: 'Язык Drupal'
     db-type: 'Тип базы данных Drupal, которая будет установлена'
-    db-file: 'Drupal файл базы данных, который будет установлен'
+    db-file: 'Drupal файл базы данных, которая будет установлена'
     site-name: 'Название сайта Drupal'
     site-mail: 'E-mail сайта Drupal'
     account-name: 'Имя пользователя администратора Drupal'
