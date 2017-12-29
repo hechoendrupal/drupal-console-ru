@@ -8,8 +8,8 @@ errors:
     invalid-mode: 'Неверный режим обслуживания'
 examples:
     -
-        description: 'Switch on maintenance'
+        description: 'Включить режим обслуживания'
         execution: 'drupal site:maintenance  on'
     -
-        description: 'Switch off maintenance'
+        description: 'Выключить режим обслуживания'
         execution: "drupal site:maintenance  off\n"
