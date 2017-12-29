@@ -3,7 +3,7 @@ help: 'Отобразить текущую статистику сайта.'
 messages:
     stat-name: Имя
     stat-quantity: Количество
-    node-type: 'Node:"%s"'
+    node-type: 'Тип контента:"%s"'
     comments: Комментарии
     vocabulary: Словари
     taxonomy-terms: 'Термины таксономии'
@@ -13,4 +13,4 @@ messages:
     modules-disabled: 'Отключенные модули'
     themes-enabled: 'Включенные темы'
     themes-disabled: 'Отключенные темы'
-    views: 'Views (Not system views)'
+    views: 'Представления (Не системные представления)'
