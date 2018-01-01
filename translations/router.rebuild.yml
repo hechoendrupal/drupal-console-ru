@@ -6,5 +6,5 @@ messages:
     completed: 'Перейстройка маршрута(ов) закончена.'
 examples:
     -
-        description: 'Rebuild routes'
+        description: 'Перестраивает маршруты'
         execution: 'drupal router:rebuild'
