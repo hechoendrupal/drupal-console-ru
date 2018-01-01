@@ -1,15 +1,16 @@
-description: 'Update the console to latest version.'
-help: 'Update the console command to the latest version.'
+description: 'Обновляет консоль до последней версии.'
+help: 'Обновляет команду консоли до последней версии.'
 options:
-    major: 'Update to a new major version, if available.'
-    manifest: 'Override the manifest file path.'
-    current-version: 'Override the version to update from.'
+    major: 'Обновляет до новой основной версии, если доступна.'
+    manifest: 'Перезаписывает путь к файлу манифеста.'
+    current-version: 'Перезаписывает версию с какой на какую производится обновление.'
 questions:
-    update: 'Update from version "%s" to version "%s".'
+    update: 'Обновляет с версии "%s" на версию "%s".'
 messages:
-    not-phar: 'This instance of the CLI was not installed as a Phar archive.'
-    update: 'Updating to version "%s".'
-    success: 'The console has been updated to the latest version.'
-    check: 'Checking for updates from version: "%s"'
-    current-version: 'The latest version "%s", was already installed on your system.'
+    not-phar: 'Этот экземпляр CLI (командной строки) не был установлен, как Phar архив.'
+    update: 'Обновляем версию на "%s".'
+    success: 'Консоль была обновлена до последней версии.'
+    check: 'Проверяем обновления из версии: "%s"'
+    current-version: 'Последняя версия "%s", была уже установлена в вашей системе.'
     instructions: "Update using: composer global update\nOr you can switch to a Phar install recommended\ncomposer global remove drupal/console\ncurl https://drupalconsole.com/installer -L -o drupal.phar\n"
+    instructions: "Обновляет, используя: composer global update\nили может был переключено на Phar установку (рекомендовано)\ncomposer global remove drupal/console\ncurl https://drupalconsole.com/installer -L -o drupal.phar\n"
