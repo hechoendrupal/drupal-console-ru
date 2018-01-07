@@ -1,8 +1,8 @@
-description: 'Process the selected queue.'
+description: 'Выполнить выбранную очередь.'
 arguments:
-    name: 'Queue name.'
+    name: 'Имя очереди.'
 messages:
-    success: 'Processed "%s": "%s"/"%s" items in "%s" seconds.'
-    failed: '"%s" failed: "%s".'
-    missing-name: 'Provide a valid queue name.'
-    invalid-name: 'Invalid queue name "%s" provided.'
+    success: 'Выполненно "%s": "%s"/"%s" элементов в течении "%s" секунд.'
+    failed: '"%s" неудавшиеся: "%s".'
+    missing-name: 'Укажите корректное имя очереди.'
+    invalid-name: 'Указано некорректное имя очереди "%s".'
