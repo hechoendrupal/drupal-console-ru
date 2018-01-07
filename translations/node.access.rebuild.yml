@@ -1,12 +1,12 @@
-description: 'Rebuild node access permissions. Rebuilding will remove all privileges to content and replace them with permissions based on the current modules and settings.'
-help: 'Rebuilding will remove all privileges to content and replace them with permissions based on the current modules and settings.'
+description: 'Перестравает права доступа к нодам. Перестройка прав удалит все привлегии к контенту и заменит их правами основанными на текущих модулях и настройках'
+help: 'Перестройка прав удалит все привлегии к контенту и заменит их правами основанными на текущих модулях и настройках.'
 options:
-    batch: 'Process in batch mode.'
+    batch: 'Выполняет в пакетном режиме.'
 messages:
-    rebuild: 'Rebuilding node access permissions, one moment please.'
-    completed: 'Done rebuilding permissions.'
-    failed: 'Rebuilding permissions was not successful.'
+    rebuild: 'Перестраивает права доступа к нодам, пожалуйста, подождите немного.'
+    completed: 'Перестройка прав доступа завершена.'
+    failed: 'Перестройка прав доступа не была успешно закончена.'
 examples:
     -
-        description: 'Rebuild node access permissions'
+        description: 'Перестравает права доступа к нодам'
         execution: 'drupal node:access:rebuild --batch'
