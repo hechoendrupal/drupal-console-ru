@@ -12,5 +12,4 @@ messages:
     success: 'Консоль была обновлена до последней версии.'
     check: 'Проверяем обновления из версии: "%s"'
     current-version: 'Последняя версия "%s", была уже установлена в вашей системе.'
-    instructions: "Update using: composer global update\nOr you can switch to a Phar install recommended\ncomposer global remove drupal/console\ncurl https://drupalconsole.com/installer -L -o drupal.phar\n"
     instructions: "Обновляет, используя: composer global update\nили может был переключено на Phar установку (рекомендовано)\ncomposer global remove drupal/console\ncurl https://drupalconsole.com/installer -L -o drupal.phar\n"
