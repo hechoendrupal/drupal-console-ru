@@ -1,19 +1,19 @@
-description: 'Displays current rest resource for the application'
+description: 'Отображает текущие rest ресурсы для приложения'
 arguments:
     resource-id: 'Rest ID'
 options:
-    status: 'Rest resource status enabled | disabled'
+    status: 'Статус Rest ресурса активирован | деактивирован'
 messages:
     id: 'Rest ID'
-    label: Label
-    canonical-url: 'Canonical URL'
-    status: Status
-    provider: Provider
-    enabled: Enabled
-    disabled: Disabled
-    rest-state: 'REST States'
-    supported-formats: 'Supported Formats'
-    supported-auth: 'Supported Authentication Providers'
-    not-found: 'Rest resource "%s" not found'
-    canonical_url: 'Canonical URL'
-    supported_auth: 'Supported Authentication Providers'
+    label: Метка
+    canonical-url: 'Канонический URL'
+    status: Статус
+    provider: Провайдер
+    enabled: Активирован
+    disabled: Деактивирован
+    rest-state: 'REST состояния'
+    supported-formats: 'Поддерживаемые форматы'
+    supported-auth: 'Поддерживаемые провайдеры аутентификации'
+    not-found: 'Rest ресурс "%s" не найден'
+    canonical_url: 'Канонический URL'
+    supported_auth: 'Поддерживаемые провайдеры аутентификации'
