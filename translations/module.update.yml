@@ -1,18 +1,18 @@
-description: 'Update core, module or modules in the application'
+description: 'Обновляет ядро, модуль или модули в приложении'
 arguments:
-    module: 'Module or modules to be updated should be separated by a space. Leave empty for updating the core and all your modules managed by Composer.'
+    module: 'Модуль или модули которые будут обновлены должны быть перечислены через пробел. Оставьте параметр пустым для обновления ядра и всех ваших модулей управляемых через Composer.'
 options:
-    composer: 'Update the module using Composer'
-    simulate: 'Simulate the update process with Composer'
+    composer: 'Обновить модуль, используя Composer'
+    simulate: 'Симулировать процесс обновления с помощью Composer'
 questions:
-    module: 'Module name (press <return> to stop adding modules)'
-    invalid-module: 'Invalid module "%s"'
+    module: 'Название модуля (нажмите <ввод> для того, чтобы закончить добавление модулей)'
+    invalid-module: 'Некорректный модуль "%s"'
 messages:
-    success: 'The following module(s) were installed successfully: "%s"'
-    composer: 'The module "%s" was installed successfully with Composer'
-    only-composer: 'This command only updates modules via Composer. Use --composer option.'
-    missing-module: 'Enter a module(s) name(s) to update.'
+    success: 'Текущие модуль(и) были успешно установлены: "%s"'
+    composer: 'Модуль "%s" был успешно установлен с помощью Composer'
+    only-composer: 'Эта команда обновляет модули через Composer. Используйте опцию --composer.'
+    missing-module: 'Введите имя(ена) моудуля(ей) для обновления.'
 examples:
     -
-        description: 'Update module specifying module name and composer parameter'
+        description: 'Обновляет модуль, используя параметр имя модуля и composer'
         execution: "drupal module:update  modulename  \\\n  --composer\n"
