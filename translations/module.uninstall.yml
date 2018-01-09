@@ -1,19 +1,19 @@
-description: 'Uninstall module or modules in the application'
+description: 'Удаляет модуль или модули из приложения'
 questions:
-    module: 'Enter module name'
-    invalid-module: 'Invalid module "%s"'
+    module: 'Введите имя модуля'
+    invalid-module: 'Некорректный модуль "%s"'
 options:
-    module: 'Module or modules to be uninstalled should be separated by a comma'
-    force: 'Do you want to ignore dependencies and forcefully uninstall the module?'
-    composer: 'Uninstalls the module using Composer'
+    module: 'Модуль или модули, которые будут удалены должны быть разделены запятой'
+    force: 'Вы хотите игнорировать зависимости и принудительно удалить модуль?'
+    composer: 'Удаляет модули, используя Composer'
 messages:
-    no-modules: 'You must provide module or modules to uninstall.'
-    dependents: 'Unable to uninstall modules "%s" because are required by "%s"'
-    nothing: 'Nothing to do. All modules are already uninstalled'
-    success: 'The following module(s) were uninstalled successfully: "%s"'
-    missing: 'Unable to install modules "%s" due to missing modules "%s"'
-    composer-success: 'The folowing module(s) were removed from Composer: "%s"'
+    no-modules: 'Вы должны указать модуль или модули для удаления.'
+    dependents: 'Невозможно удалить модули "%s", потому они необходимы для "%s"'
+    nothing: 'Все модули уже были удалены'
+    success: 'Текущий(е) модуль(и) был(и) успешно удален(ы): "%s"'
+    missing: 'Невозможно установить модули "%s" из-за отсутствующих модулей "%s"'
+    composer-success: 'Текущие модули были удалены из Composer: "%s"'
 examples:
     -
-        description: 'Uninstall the module specifying the module name'
+        description: 'Удаляет модуль по его имени'
         execution: "drupal module:uninstall  modulename\n"
