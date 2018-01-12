@@ -1,10 +1,10 @@
-description: 'Returns the relative path to the module (or absolute path)'
+description: 'Возвращает относительный или абсолютный путь к модулю'
 arguments:
-    module: 'The Module name (machine name)'
+    module: 'Имя модуля (машинное имя)'
 options:
-    absolute: 'Return module absolute path'
+    absolute: 'Возвращает абсолютный путь к модулю'
 messages: null
 examples:
     -
-        description: 'Get the relative path of the module specifying the module name'
+        description: 'Возвращает относительный путь к модуля по машинному имени модуля'
         execution: "drupal module:path  modulename\n"
