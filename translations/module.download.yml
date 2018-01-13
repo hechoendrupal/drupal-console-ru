@@ -3,10 +3,10 @@ arguments:
     module: 'Модуль или модули, которые будут включены должны быть разделены пробелом'
 options:
     latest: 'По умолчанию загружать самую последнюю версию'
-    path: 'The path of the contrib project'
-    composer: 'Option to point out that the module will be downloaded, managed & installed by Composer'
+    path: 'Путь к проекту модуля'
+    composer: 'Опция указывает, что модуль будет скачен, установлен и управляем с помощью Composer'
 questions:
-    path: 'Enter the contrib project Path'
+    path: 'Введите путь к проекту модуля'
 messages:
     no-releases: 'Нет никаких релизов для модуля "%s"'
     getting-releases: 'Получение релизов для модуля "%s"'
@@ -15,9 +15,9 @@ messages:
     select-release: 'Пожалуйста, выберите желаемый релиз'
     outside-drupal: 'Drupal root не может быть определен. Используйте --root, чтобы установить пункт назначения, текущая папка будет использована в обратном случае'
     error-creating-folder: 'Ошибка создания папки "%s", пожалуйста, проверьте ваши права доступа'
-    no-composer-repo: 'Please, configure Composer in ~/.console/config.yml'
-    composer: 'Module "%s" was downloaded successfully using Composer'
+    no-composer-repo: 'Пожалуйста, сконфигурируйте Composer in ~/.console/config.yml'
+    composer: 'Модуль "%s" был успешно установлен с помощью Composer'
 examples:
     -
-        description: 'Download module specifying module name and its path'
+        description: 'Скачивает указанный модуль в указанный путь'
         execution: "drupal module:download  modulename  \\\n  --path=\"modules/contrib\"\n"
