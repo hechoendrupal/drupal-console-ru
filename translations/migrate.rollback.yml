@@ -1,6 +1,6 @@
-description: 'Rollback one or multiple migrations'
+description: 'Откаывает изменения для одной или множества миграций'
 arguments:
-    id: 'Migration id(s)'
+    id: 'Id миграции(й)'
 messages:
-    not-available: 'Migration Id "%s" is invalid.Skipping'
-    processing: 'Rollback "%s" completed'
+    not-available: '"%s" некорректный Id миграции. Пропускаем'
+    processing: 'Откатат изменний "%s" завершен'
