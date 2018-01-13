@@ -1,7 +1,7 @@
-description: 'Install dependencies module in the application'
+description: 'Утанавливает зависимости модуля в приложении'
 arguments:
-    module: 'Module or modules to be enabled should be separated by a space'
+    module: 'Модуль или модули, которые будут активированы должны быть разделены пробелами'
 messages:
-    no-depencies: 'Nothing to do. This modules has not dependencies to install'
-    installing: 'Installing module(s) "%s"'
-    success: 'The following module(s) were installed successfully: "%s"'
+    no-depencies: 'Модуль не имеет зависимостей для установки'
+    installing: 'Устанавливаем модуль(и) "%s"'
+    success: 'Текущий(е) модуль(и) был(и) успешно установлен(ы): "%s"'
