@@ -1,4 +1,4 @@
-description: 'Выполнить миграцию доступную для приложения'
+description: 'Выполняет миграцию доступную для приложения'
 arguments:
     id: 'Идентификатор(ы) миграции'
 options:
@@ -11,8 +11,7 @@ options:
     db-prefix: 'Префикс базы данных'
     db-port: 'Порт базы данных'
     exclude: 'Идентификатор(ы) миграций для исключения'
-    source-base-path: 'Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)'
-    source-base_path: 'Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)'
+    source-base-path: 'Локальный каталог содержащий код вашего сайта (например /var/www/docroot), или адрес вашего сайта (например http://example.com)'
 questions:
     id: 'Идентификатор миграции'
     exclude-id: 'Идентификатор миграции для исключения (нажмите <ввод> чтобы оставноить добавление миграций для исключения)'
@@ -26,11 +25,10 @@ questions:
     db-prefix: 'Префикс базы данных'
     db-port: 'Порт базы данных'
     invalid-migration-id: 'Идентификатор миграции "%s" неверен'
-    source-base-path: 'Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)'
-    source-base_path: 'Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)'
+    source-base-path: 'Локальный каталог содержащий код вашего сайта (например /var/www/docroot), или адрес вашего сайта (например http://example.com)'
 messages:
     processing: 'Обработка миграции "%s"'
-    imported: 'Миграция "%s" была импортирована  imported корректно'
+    imported: 'Миграция "%s" была корректно импортирована'
     fail-load: 'Миграция "%s" не может быть загружена'
     importing-incomplete: 'Импортирование миграции "%s"'
     import-stopped: 'Импорт "%s" остановлен по запросу'
