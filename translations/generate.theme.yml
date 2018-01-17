@@ -1,4 +1,4 @@
-description: 'Сгенерировать тему.'
+description: 'Генерирует тему.'
 help: 'Команда <info>generate:theme</info> позволяет вам сгенерировать новую тему.'
 welcome: 'Добро пожаловать в Drupal генератор тем'
 options:
@@ -7,12 +7,12 @@ options:
     theme-path: 'Путь до темы'
     description: 'Описание темы'
     core: 'Версия ядра'
-    package: 'Theme package'
+    package: 'Пакет темы'
     composer: 'Добавить файл composer.json'
     base-theme: 'Базовая тема (например, classy, stable)'
     global-library: 'Имя глобальной библиотеки стилей'
     regions: 'Регионы'
-    breakpoints: Breakpoints
+    breakpoints: 'Контрольные точки'
 questions:
     theme: 'Введите название новой темы'
     machine-name: 'Введите машинное имя темы'
@@ -20,7 +20,7 @@ questions:
     description: 'Введите описание темы'
     core: 'Введите версию ядра Drupal'
     package: 'Enter package name'
-    dependencies: 'Would you like to add module dependencies'
+    dependencies: 'Вы хотите добавить зависимости модулей'
     invalid-theme: 'Была выбрана некорректная тема "%s"'
     global-library: 'Введите имя глобальной библиотеки стилей'
     library-add: 'Хотите добавить еще одну библиотеку'
@@ -30,21 +30,21 @@ questions:
     region-name: 'Введите название региона'
     region-machine-name: 'Введите машинное имя региона'
     region-add: 'Хотите добавить еще один регион'
-    breakpoints: 'Do you want to generate the theme breakpoints'
-    breakpoint-name: 'Enter breakpoint name'
-    breakpoint-label: 'Enter breakpoint label'
-    breakpoint-media-query: 'Enter breakpoint media query'
-    breakpoint-weight: 'Enter breakpoint weight'
-    breakpoint-multipliers: 'Enter breakpoint multipliers'
-    breakpoint-add: 'Do you want to add another breakpoint'
+    breakpoints: 'Вы хотите сгенерировать контрольные точки темы'
+    breakpoint-name: 'Введите имя контрольной точки'
+    breakpoint-label: 'Введите заголовок контрольной точки'
+    breakpoint-media-query: 'Введите медиа запрос контрольной точки'
+    breakpoint-weight: 'Введите вес контрольной точки'
+    breakpoint-multipliers: 'Введите множитель для контрольной точки'
+    breakpoint-add: 'Вы хотите добавить еще одну контрольную точку'
 warnings:
-    module-unavailable: 'Warning The following modules are not already available in your local environment "%s"'
+    module-unavailable: 'Предупреждение, текущие модули недоступны в вашем локальном окружении "%s"'
 errors:
     directory-exists: 'Целевая директория "%s" не пуста.'
 examples:
     -
-        description: 'Generate a theme without region and without breakpoint specifying the theme name, its machine name, the theme path, a description, the drupal core, the package name and the global library'
+        description: 'Генерирует тему без регионов и контрольных точек по названию темы, машинному имени, пути темы, описанию, ядру Drupal, имени пакета и глобальной библиотеке'
         execution: "drupal generate:theme  \\\n  --theme=\"AnotherTheme\"  \\\n  --machine-name=\"anothertheme\"  \\\n  --theme-path=\"/themes/custom\"  \\\n  --description=\"My Awesome theme\"  \\\n  --core=\"8.x\"  \\\n  --package=\"PackageName\"  \\\n  --global-library=\"global-styling\"  \\\n  --base-theme=\"false\""
     -
-        description: 'Generate a theme base on stable theme with two region defined and one breakpoint specifying the theme name, its machine name, the theme path, a description, the drupal core, the package name, a global library, its base, the regions and the breakpoint'
+        description: 'Генерирует тему на основе темы stable с двумя регионами и одной контрольной точкой по названию темы, машинному имени, пути темы, описанию, ядру Drupal, имени пакета, глобальной библиотеке, базовой теме, регионам и контрольной точке'
         execution: "drupal generate:theme  \\\n  --theme=\"MyTheme\"  \\\n  --machine-name=\"mytheme\"  \\\n  --theme-path=\"/themes/custom\"  \\\n  --description=\"My Awesome theme\"  \\\n  --core=\"8.x\"  \\\n  --package=\"MyThemePackage\"  \\\n  --global-library=\"global-styling\"  \\\n  --base-theme=\"stable\"  \\\n  --regions='\"region_name\":\"Content\", \"region_machine_name\":\"content\"'  \\\n  --regions='\"region_name\":\"Panel\", \"region_machine_name\":\"panel\"'  \\\n  --breakpoints='\"breakpoint_name\":\"narrow\", \"breakpoint_label\":\"narrow\", \"breakpoint_media_query\":\"all and (min-width: 560px) and (max-width: 850px)\", \"breakpoint_weight\":\"1\", \"breakpoint_multipliers\":\"1x\"'\n"
