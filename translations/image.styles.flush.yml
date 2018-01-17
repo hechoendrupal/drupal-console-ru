@@ -1,15 +1,15 @@
-description: 'Execute flush function by image style or execute all flush images styles'
+description: 'Отчищает кеш по стилю изображений или отчищает кеш для всех стилей изображений'
 messages:
-    executing-flush: 'Executing flush function on image style "%s"'
-    success: 'All flush functions requested were executed successfully'
+    executing-flush: 'Отчищает кеш для стиля изображений "%s"'
+    success: 'Отчистка кеша была успешно завершена'
 options:
-    image-style: 'The Images Styles name.'
+    image-style: 'Имена стилей изображений.'
 questions:
-    image-style: 'Select Images Styles to flush.'
+    image-style: 'Выберите стили изображений для которых будет сброшен кеш.'
 examples:
     -
-        description: 'Flush large image style'
+        description: 'Сбрасывает кеш стиля изображений large'
         execution: 'drupal image:styles:flush  large'
     -
-        description: 'Flush thumbnail image style'
+        description: 'Сбрасывает кеш стиля изображений thumbnail'
         execution: "drupal image:styles:flush  thumbnail\n"
