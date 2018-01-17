@@ -1,11 +1,12 @@
-description: 'Generate a Twig extension.'
-help: 'The <info>generate:twig:extension</info> command helps you to generate a Twig extension.'
+description: 'Генерирует Twig расширение.'
+help: 'Команда <info>generate:twig:extension</info> помогает сгенерировать Twig расширение.'
 welcome: 'Welcome to the Drupal Twig Extension generator'
+welcome: 'Добро пожаловать в генератор Drupal Twig расширений'
 options:
-    name: 'Twig Extension name'
+    name: 'Имя Twig расширения'
 questions:
-    twig-extension: 'Enter the Twig extension name'
+    twig-extension: 'Введите имя Twig расширения'
 examples:
     -
-        description: 'Generate a twig extension specifying the module name, the extension name and its class'
+        description: 'Генерирует twig расширение по имени модуля, имени расширения и его классу'
         execution: "drupal generate:twig:extension  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.twig.extension\"  \\\n  --class=\"DefaultTwigExtension\"\n"
