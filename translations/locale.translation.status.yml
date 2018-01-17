@@ -15,4 +15,4 @@ messages:
     local-file-not-found: 'Файл не найден в "%s"'
     translation-not-determined: 'Расположение файла переводов не может быть определено.'
     translation-project-updated: Обновлен
-    translation-project-available: 'New translation available'
+    translation-project-available: 'Новые переводы доступны'
