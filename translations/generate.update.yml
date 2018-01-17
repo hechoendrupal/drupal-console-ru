@@ -1,12 +1,12 @@
-description: 'Generate an implementation of hook_update_N()'
-help: 'The <info>"%s"</info> command helps you generate a hook update N "%s"'
+description: 'Генерирует имплементацию hook_update_N()'
+help: 'Команда <info>"%s"</info> помогает сгенерировать hook update N "%s"'
 options:
-    update-n: 'Update Number'
+    update-n: 'Номер обновления'
 questions:
-    update-n: 'Please provide the Update N to be implemeted'
+    update-n: 'Пожалуйста, предоставьте номер обновления, который будет имплементирован'
 messages:
-    wrong-update-n: 'The update number "%s" is invalid'
+    wrong-update-n: 'Номер обновления "%s" неверен'
 examples:
     -
-        description: 'Generate an update N hook implementation specifying the module name and the N value'
+        description: 'Генерирует имплементацию hook update N по имени модуля и значению номера обновления'
         execution: "drupal generate:update  \\\n  --module=\"modulename\"  \\\n  --update-n=\"8001\"\n"
