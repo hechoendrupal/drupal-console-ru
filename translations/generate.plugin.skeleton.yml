@@ -1,17 +1,17 @@
-description: 'Generate an implementation of a skeleton plugin for those plugins Drupal Console do not have a specific generator'
-help: 'The <info>"%s"</info> command helps you generate a skeleton plugin "%s"'
+description: 'Генерирует имплементацию skeleton плагина для тех плагинов для которых Drupal Console не имеет специального генератора'
+help: 'Команда <info>"%s"</info> помогает сгенерировать skeleton плагин "%s"'
 options:
     module: common.options.module
-    plugin: 'The Plugin Id.'
-    class: 'Plugin class name'
+    plugin: 'ID плагина.'
+    class: 'Имя класса плагина'
 questions:
     module: common.questions.module
-    plugin: 'Enter the Plugin Id'
-    class: 'Enter the plugin class name'
+    plugin: 'Введите ID плагина'
+    class: 'Введите имя класса плагина'
 messages:
-    plugin-dont-exist: 'The plugin "%s" do not exist'
-    plugin-generator-implemented: 'Plugin "%s" already has an advanced command generator, please use "%s"'
+    plugin-dont-exist: 'Плагин "%s" не существует'
+    plugin-generator-implemented: 'Плагин "%s" уже имеет продвинутую команду генератора, пожалуйста используйте "%s"'
 examples:
     -
-        description: 'Generate a plugin skeleton specifying module name, the plugin id and the class'
+        description: 'Генерирует skeleton плагин по имени модуля, ID плагина и его классу'
         execution: "drupal generate:plugin:skeleton  \\\n  --module=\"modulename\"  \\\n  --plugin-id=\"link_relation_type\"  \\\n  --class=\"DefaultLinkRelationType\"\n"
