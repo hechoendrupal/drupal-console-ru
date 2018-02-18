@@ -1,17 +1,17 @@
-description: 'Generate a plugin type with annotation discovery'
-help: 'The <info>generate:plugin:type:annotation</info> command helps you generate a new Plugin type that uses annotation discovery.'
-welcome: 'Welcome to the Drupal Plugin Type generator'
+description: 'Генерирует тип плагина с обнаружением по аннотации'
+help: 'Команда <info>generate:plugin:type:annotation</info> помогает сгенерировать новый тип плагина, который использует обнаружение по аннотации.'
+welcome: 'Добро пожаловать, в Drupal генератор типов плагинов'
 options:
     module: common.options.module
-    class: 'Plugin type class name'
-    machine-name: 'Plugin type machine name'
-    label: 'Plugin type label'
+    class: 'Название класса типа плагина'
+    machine-name: 'Машинное имя типа плагина'
+    label: 'Заголовок типа плагина'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin type class name'
-    machine-name: 'Enter the plugin type machine name'
-    label: 'Enter the plugin type label'
+    class: 'Введите название класса типа плагина'
+    machine-name: 'Введите машинное имя типа плагина'
+    label: 'Введите заголовк типа плагина'
 examples:
     -
-        description: 'Generate a plugin with annotation discovery specifying module name, class name, machine name and label'
+        description: 'Генерирует плагин с обнаружением по аннотации по имени модуля, имени класса, машинному имени и заголовку'
         execution: "drupal generate:plugin:type:annotation  \\\n  --module=\"modulename\"  \\\n  --class=\"ExamplePlugin\"  \\\n  --machine-name=\"example_plugin\"  \\\n  --label=\"Example plugin\"\n"
