@@ -1,15 +1,16 @@
-description: 'Generate a RouteSubscriber'
-help: 'The <info>generate:service</info> command helps you generate a new RouteSubscriber.'
+description: 'Генерирует RouteSubscriber'
+help: 'Команда <info>generate:service</info> помогает сгенерировать новый RouteSubscriber.'
 welcome: 'Welcome to the Drupal RouteSubscriber generator.'
+welcome: 'Добро пожаловать, в Drupal генератор RouteSubscriber.'
 options:
     module: common.options.module
-    name: 'Service name'
-    class: 'Class name'
+    name: 'Имя сервиса'
+    class: 'Имя класса'
 questions:
     module: common.questions.module
-    name: 'Enter the service name'
-    class: 'Enter the Class name'
+    name: 'Введите имя сервиса'
+    class: 'Введите имя класса'
 examples:
     -
-        description: 'Generate a route subscriber specifying the module name, the route name and its class'
+        description: 'Генерирует RouteSubscriber по имени модуля, имени маршрута и его классу'
         execution: "drupal generate:routesubscriber  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.route_subscriber\"  \\\n  --class=\"RouteSubscriber\"\n"
