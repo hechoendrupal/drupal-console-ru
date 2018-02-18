@@ -1,17 +1,18 @@
-description: 'Generate a plugin type with Yaml discovery'
-help: 'The <info>generate:plugin:type:yaml</info> command helps you generate a new Plugin type that uses Yaml discovery.'
+description: 'Генерирует тип плагина с Yaml обнаружением'
+help: 'Команда <info>generate:plugin:type:yaml</info> помогает сгенерировать новый тип плагина который использует Yaml обнаружение.'
 welcome: 'Welcome to the Drupal Plugin Type generator'
+welcome: 'Добро пожаловать, в Drupal генератор типов плагинов'
 options:
     module: common.options.module
-    class: 'Plugin type class name'
-    plugin-name: 'Plugin type machine name'
-    plugin-file-name: 'Plugin file name'
+    class: 'Название класса типа плагина'
+    plugin-name: 'Машинное имя типа плагина'
+    plugin-file-name: 'Имя файла плагина'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin type class name'
-    plugin-name: 'Enter the plugin type machine name'
-    plugin-file-name: 'Enter the plugin file name (e.g. MODULE.plugin.filename.yml)'
+    class: 'Введите имя класса типа плагина'
+    plugin-name: 'Введите машинное имя типа плагина'
+    plugin-file-name: 'Введите имя файла плагина (например MODULE.plugin.filename.yml)'
 examples:
     -
-        description: 'Generate a plugin with Yaml discovery specifying module name, class name, plugin name and plugin file name'
+        description: 'Генерирует плагин с Yaml обнаружением по имени модуля, имени класса, имени плагина и имени файла плагина'
         execution: "drupal generate:plugin:type:yaml  \\\n  --module=\"modulename\"  \\\n  --class=\"ExamplePlugin\"  \\\n  --plugin-name=\"example_plugin\"  \\\n  --plugin-file-name=\"example.plugin\"\n"
