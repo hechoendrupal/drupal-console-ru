@@ -1,25 +1,26 @@
-description: 'Generate a profile.'
-help: 'The <info>generate:profile</info> command helps you generate a new installation profile.'
+description: 'Генерирует профайл.'
+help: 'Команда <info>generate:profile</info> помогает сгенерировать инсталяционный профайл.'
 welcome: 'Welcome to the Drupal installation profile generator'
+welcome: 'Добро пожаловать в Drupal генератор инсталяционных профайлов'
 options:
-    profile: 'The profile name'
-    machine-name: 'The machine name (lowercase and underscore only)'
-    description: 'Profile description'
-    core: 'Core version'
-    dependencies: 'Module dependencies separated by commas (i.e. context, panels)'
-    distribution: 'The distribution name'
+    profile: 'Имя профайла'
+    machine-name: 'Машинное имя (только буквы в нижнем регистре и знаки подчеркивания)'
+    description: 'Описание профайла'
+    core: 'Версия ядра'
+    dependencies: 'Зависимости модулей разделенные запятыми (например context, panels)'
+    distribution: 'Имя дистрибьюции'
 questions:
-    profile: 'Enter the name of the new profile'
-    machine-name: 'Enter the machine name'
-    description: 'Enter the description'
-    core: 'Enter Drupal Core version'
-    dependencies: 'Would you like to add module dependencies'
-    distribution: 'Is this install profile intended to be a distribution'
+    profile: 'Введите имя нового профайла'
+    machine-name: 'Введите машинное имя'
+    description: 'Введите описание'
+    core: 'Введите версию ядра Drupal'
+    dependencies: 'Хотели бы вы добавить зависимости модулей?'
+    distribution: 'Является этот инсталяционный профайл дистрибьюцией?'
 warnings:
-    module-unavailable: 'Warning The following modules are not already available in your local environment "%s"'
+    module-unavailable: 'Предупреждение: текущие модули не доступны в вашем локальном окружении "%s"'
 errors:
-    directory-exists: 'The target directory "%s" is not empty.'
+    directory-exists: 'Целевая директория "%s" не пуста.'
 examples:
     -
-        description: 'Generate a profile specifying the profile name, the machine name, a description, the core and its module dependencies'
+        description: 'Генерирует профайл по имени профайла, машинному имени, описанию, версии ядра и зависимостям модулей'
         execution: "drupal generate:profile  \\\n  --profile=\"NewProfileName\"  \\\n  --machine-name=\"newprofilename\"  \\\n  --description=\"My Useful Profile\"  \\\n  --core=\"8.x\"  \\\n  --dependencies=\"modulename\"\n"
