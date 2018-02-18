@@ -1,13 +1,13 @@
-description: 'Generate an implementation of hook_post_update_NAME()'
-help: 'The <info>"%s"</info> command helps you generate a hook post update NAME "%s"'
+description: 'Генерирует имплементацию hook_post_update_NAME()'
+help: 'Команда <info>"%s"</info> команда помогает генерировать hook_post_update_NAME() "%s"'
 options:
-    post-update-name: 'Post Update Name'
+    post-update-name: 'Имя хука после обновления'
 questions:
-    post-update-name: 'Please provide the Post Update Name to be implemeted'
+    post-update-name: 'Укажите имя хука после обновления, который будет имплементирован'
 messages:
-    wrong-post-update-name: 'The post update name "%s" is invalid'
-    post-update-name-already-implemented: 'The post update name "%s" was already implemented'
+    wrong-post-update-name: 'Имя хука после обновления "%s" неверен'
+    post-update-name-already-implemented: 'Хук после обновления "%s" уже было имплементирован'
 examples:
     -
-        description: 'Generate an implementation of post update hook specifying the module name and the post update name'
+        description: 'Генерирует имплементацию хука после обновления по имени модуля и имени хука после обновления'
         execution: "drupal generate:post:update  \\\n  --module=\"modulename\"  \\\n  --post-update-name=\"PostUpdateName\"\n"
