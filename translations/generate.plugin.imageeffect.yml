@@ -1,19 +1,19 @@
-description: 'Generate image effect plugin.'
-help: 'The <info>generate:plugin:imageeffect</info> command helps you generate a new image effect plugin.'
-welcome: 'Welcome to the Drupal Image Effect Plugin generator'
+description: 'Генерирует плагин эффект изображения.'
+help: 'Команда <info>generate:plugin:imageeffect</info> помогает сгенерировать новый плагин эффект изображения.'
+welcome: 'Добро пожаловать, в Drupal генератор плагина эффект изображения'
 options:
     module: common.options.module
-    class: 'Plugin class name'
-    label: 'Plugin label'
-    plugin-id: 'Plugin id'
-    description: 'Plugin Description'
+    class: 'Название класса типа плагина'
+    label: 'Заголовок плагина'
+    plugin-id: 'ID плагина'
+    description: 'Описание плагина'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin class name'
-    label: 'Enter the plugin label'
-    plugin-id: 'Enter the plugin id'
-    description: 'Enter the plugin Description'
+    class: 'Введите имя класса плагина'
+    label: 'Введите заголовок плагина'
+    plugin-id: 'Введите ID плагина'
+    description: 'Введите описание плагина'
 examples:
     -
-        description: 'Generate a image effect plugin specifying the module name, the class, its label, the plugin id and a description'
+        description: 'Генерирует плагин эффект изображения по имени модуля, классу, заголовку, ID плагина и описанию'
         execution: "drupal generate:plugin:imageeffect  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultImageEffect\"  \\\n  --label=\"Default image effect\"  \\\n  --plugin-id=\"default_image_effect\"  \\\n  --description=\"My Image Effect\"\n"
