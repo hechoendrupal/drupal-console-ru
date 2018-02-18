@@ -1,6 +1,5 @@
 description: 'Генерирует Twig расширение.'
 help: 'Команда <info>generate:twig:extension</info> помогает сгенерировать Twig расширение.'
-welcome: 'Welcome to the Drupal Twig Extension generator'
 welcome: 'Добро пожаловать в генератор Drupal Twig расширений'
 options:
     name: 'Имя Twig расширения'
