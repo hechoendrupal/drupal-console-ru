@@ -1,23 +1,23 @@
-description: 'Generate plugin rest resource'
-help: 'The <info>generate:plugin:rest:resource</info> command helps you generate a new rest resource.'
-welcome: 'Welcome to the Drupal Plugin Rest Resource generator'
+description: 'Генерирует плагин rest ресурса'
+help: 'Команда <info>generate:plugin:rest:resource</info> помогает сгенерировать новый rest ресурс.'
+welcome: 'Добро пожаловать, Drupal генератор Rest ресурса'
 options:
     module: common.options.module
-    class: 'Plugin Rest Resource class'
-    plugin-id: 'Plugin Rest Resource id'
-    plugin-label: 'Plugin Rest Resource Label'
-    plugin-url: 'Plugin Rest Resource URL'
-    plugin-states: 'Plugin Rest Resource States'
+    class: 'Класс плагин Rest ресурса'
+    plugin-id: 'ID плагина Rest ресурса'
+    plugin-label: 'Заголовок плагина Rest ресурса'
+    plugin-url: 'URL плагина Rest ресурса'
+    plugin-states: 'Состояния плагина Rest ресурса'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin rest resource name'
-    plugin-id: 'Enter the plugin rest resource id'
-    plugin-label: 'Enter the plugin rest resource label'
-    plugin-url: 'Enter the plugin rest resource url'
-    plugin-states: 'Please select what REST States implement in your resource (GET is selected by default)'
+    class: 'Введите класс плагина Rest ресурса'
+    plugin-id: 'Введите ID плагина Rest ресурса'
+    plugin-label: 'Введите заголовок плагина Rest ресурса'
+    plugin-url: 'Введите URL плагина Rest ресурса'
+    plugin-states: 'Пожалуйста, выберите имплементации REST состояний в вашем ресурсе (GET выбран по умолчанию)'
 messages:
-    selected-states: 'States selected'
+    selected-states: 'Выбранные состояния'
 examples:
     -
-        description: 'Generate a rest resource plugin using GET specifying the module name, the class, the plugin id, its label, the target url and the request type'
+        description: 'Генерирует плагин rest ресурса по имени модуля, классу, ID плагина, заголовку, URL и типу запроса'
         execution: "drupal generate:plugin:rest:resource  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultRestResource\"  \\\n  --plugin-id=\"default_rest_resource\"  \\\n  --plugin-label=\"Default rest resource\"  \\\n  --plugin-url=\"http://rest.resources.example.com\"  \\\n  --plugin-states='GET'\n"
