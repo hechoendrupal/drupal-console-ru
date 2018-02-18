@@ -13,15 +13,15 @@ questions:
     service-name: 'Введите имя сервиса'
     class: 'Введите имя Класса'
     interface: 'Создать интерфейс'
-    interface-name: 'Enter the interface name'
+    interface-name: 'Введите имя интерфейса'
     services: common.options.services
-    path: 'Enter the path for the services'
+    path: 'Введите путь для сервисов'
 messages:
-    service-already-taken: 'The service name has been already taken in module "%s"'
+    service-already-taken: 'Имя сервиса уже было использовано в модуле "%s"'
 examples:
     -
-        description: 'Generate a services without interface specifying the module name, the service name, the class and its path'
+        description: 'Генерирует сервис без интерфейса по имени модуля, имени сервиса, классу и пути'
         execution: "drupal generate:service  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.default\"  \\\n  --class=\"DefaultService\"  \\\n  --path-service=\"/modules/custom/modulename/src/\""
     -
-        description: 'Generate a services with interface specifying the module name, the service name, the class, the interface name and its path'
+        description: 'Генерирует сервис с интерфейсом по имени модуля, имени сервиса, классу и пути'
         execution: "drupal generate:service  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.default\"  \\\n  --class=\"DefaultService\"  \\\n  --interface  \\\n  --interface-name=\"InterfaceName\"  \\\n  --path-service=\"/modules/custom/modulename/src/\"\n"
