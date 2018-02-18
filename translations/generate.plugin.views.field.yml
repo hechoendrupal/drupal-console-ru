@@ -1,15 +1,15 @@
-description: 'Generate a custom plugin view field.'
-help: 'The <info>generate:plugin:views:field</info> command helps you generate a new custom views field plugin.'
+description: 'Генерирует плагин поля представления.'
+help: 'Команда <info>generate:plugin:views:field</info> помогает сгенерировать новый плагин поля представления.'
 options:
-    class: 'Views plugin field class name'
-    title: 'Views plugin field title'
-    description: 'Views plugin field description'
+    class: 'Имя класса плагина поля представления'
+    title: 'Название плагина поля представления'
+    description: 'Описание плагина поля представления'
 questions:
-    class: 'Views plugin field class name'
-    title: 'Views plugin field title'
-    description: 'Views plugin field description'
-    description_default: 'My awesome custom views field plugin.'
+    class: 'Имя класса плагина поля представления'
+    title: 'Название плагина поля представления'
+    description: 'Описание плагина поля представления'
+    description_default: 'Мой супер плагин поля представления.'
 examples:
     -
-        description: 'Generate a custom view field plugin specifying the module name, the class, a title and its description'
+        description: 'Генерирует новый плагин поля представления по имени модуля, классу, названию и его описанию'
         execution: "drupal generate:plugin:views:field  \\\n  --module=\"modulename\"  \\\n  --class=\"CustomViewsField\"  \\\n  --title=\"Custom views field\"  \\\n  --description=\"My awesome custom views field plugin.\"\n"
