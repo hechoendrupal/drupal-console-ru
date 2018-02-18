@@ -1,29 +1,29 @@
-description: 'Generate a plugin rule action'
-help: 'The <info>generate:plugin:rulesaction</info> command helps you generate a new Plugin rule action.'
-welcome: 'Welcome to the Drupal Plugin Rules Action generator'
+description: 'Генерирует плагин действия правил'
+help: 'Команда <info>generate:plugin:rulesaction</info> помоагет сгенерировать новый плагин для действия правил.'
+welcome: 'Добро пожаловать, в Drupal генератор плагина для действия правил'
 options:
     module: common.options.module
-    class: 'Plugin class name'
-    label: 'Plugin label'
-    plugin-id: 'Plugin id'
+    class: 'Имя класса плагина'
+    label: 'Заголовок плагина'
+    plugin-id: 'ID плагина'
     inputs: common.options.inputs
     services: common.options.services
-    category: 'Plugin category'
-    context: 'Plugin context'
-    type: 'Action Type (user or node)'
+    category: 'Категория плагина'
+    context: 'Контекст плагина'
+    type: 'Тип действия (пользователь или нод)'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin class name'
-    label: 'Enter the plugin label'
-    plugin-id: 'Enter the plugin id'
+    class: 'Введите имя класса плагина'
+    label: 'Введите заголовк плагина'
+    plugin-id: 'Введите ID плагина'
     inputs: common.questions.inputs
     services: common.questions.services
-    category: 'Enter plugin category'
-    context: 'Enter plugin context'
+    category: 'Введите категорию плагина'
+    context: 'Введите контекст плагина'
 examples:
     -
-        description: 'Generate a user rule action plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context'
+        description: 'Генерирует действие правила типа пользователь по имени модуля, классу, заголовку, ID плагина, типу, категории и контексту'
         execution: "drupal generate:plugin:rulesaction  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultAction\"  \\\n  --label=\"Default action\"  \\\n  --plugin-id=\"default_action\"  \\\n  --type=\"user\"  \\\n  --category=\"default_action\"  \\\n  --context=\"default_action\""
     -
-        description: 'Generate a node rule action plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context'
+        description: 'Генерирует действие правила типа нод по имени модуля, классу, заголовку, ID плагина, типу, категории и контексту'
         execution: "drupal generate:plugin:rulesaction  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultAction\"  \\\n  --label=\"Default action\"  \\\n  --plugin-id=\"default_action\"  \\\n  --type=\"node\"  \\\n  --category=\"default_action\" \\\n  --context=\"default_action\"\n"
