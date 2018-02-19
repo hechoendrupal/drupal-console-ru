@@ -1,13 +1,13 @@
-description: 'Generate a migrate process plugin'
-help: 'Creates new process plugin for the migration.'
+description: 'Генерирует плагин обработки для миграции'
+help: 'Создает новый плагин обработки для миграции.'
 options:
     module: common.options.module
-    class: 'Plugin class name'
-    plugin-id: 'Plugin id'
+    class: 'Имя класса плагина'
+    plugin-id: 'ID плагина'
 questions:
-    class: 'Enter the migration process plugin class name'
-    plugin-id: 'Enter the migration process plugin id'
+    class: 'Введите имя класса плагина обработки для миграции'
+    plugin-id: 'Введите ID плагина обработки для миграции'
 examples:
     -
-        description: 'Generate a migration plugin process specifying the module name, the class and its id'
+        description: 'Генерирует плагин обработки для миграции по имени модуля, классу и ID'
         execution: "drupal generate:plugin:migrate:process  \\\n  --module=\"modulename\"  \\\n  --class=\"MigrationProcess\"  \\\n  --plugin-id=\"migrationprocess\"\n"
