@@ -1,26 +1,27 @@
-description: 'Generate a plugin block'
-help: 'The <info>generate:plugin:block</info> command helps you generate a new Plugin block.'
-welcome: 'Welcome to the Drupal Plugin Block generator'
+description: 'Генерирует плагин блока'
+help: 'Команда <info>generate:plugin:block</info> помогает сгенерировать новый плагин блока.'
+welcome: 'Добро пожаловать, Drupal генератор плагина блока'
 options:
     module: common.options.module
-    class: 'Plugin class name'
-    label: 'Plugin label'
-    plugin-id: 'Plugin id'
+    class: 'Имя класса плагина'
+    label: 'Заголовок плагина'
+    plugin-id: 'ID плагина'
     inputs: common.options.inputs
     services: common.options.services
-    theme-region: 'Theme region to render Plugin Block'
+    theme-region: 'Регион темы для отображения плагина блока'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin class name'
-    label: 'Enter the plugin label'
-    plugin-id: 'Enter the plugin id'
+    class: 'Введите имя класса плагина'
+    label: 'Введите заголовок плагина'
+    plugin-id: 'Введите ID плагина'
     inputs: common.questions.inputs
     services: common.questions.services
-    theme-region: 'Enter the theme region to render the Plugin Block.'
+    theme-region: 'Введите регион темы для отображения плагина блока.'
 messages:
-    inputs: "\nYou can add input fields to create special configurations in the block.\nThis is optional, press <info>enter</info> to <info>continue</info>"
+    inputs: "\nВы можете ввести поля для создания специальной конфигурации блока.\nЭто опционально, нажмите <info>ввод</info> для <info>продолжения</info>"
     invalid-theme-region: 'Region "%s" is invalid'
+    invalid-theme-region: 'Регион "%s" неверный'
 examples:
     -
-        description: 'Generate a plugin block in the header region with an input field specifying the module name, the class, the label, its id, the region and the input'
+        description: 'Генерирует плагин блока в регионе header по имени модуля, классу, заголовку, ID, региону и вводу полей'
         execution: "drupal generate:plugin:block  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultBlock\"  \\\n  --label=\"Default block\"  \\\n  --plugin-id=\"default_block\"  \\\n  --theme-region=\"header\"  \\\n  --inputs='\"name\":\"inputtext\", \"type\":\"text_format\", \"label\":\"InputText\", \"options\":\"\", \"description\":\"Just an input text\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'"
