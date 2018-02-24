@@ -1,19 +1,19 @@
-description: 'Generate field widget plugin.'
-help: 'The <info>generate:plugin:fieldwidget</info> command helps you generate a new field widget plugin.'
-welcome: 'Welcome to the Drupal Field Widget Plugin generator'
+description: 'Генерирует плагин виджета поля.'
+help: 'Команда <info>generate:plugin:fieldwidget</info> помогает сгенерировать новый плагин виджета поля.'
+welcome: 'Добро пожаловать, в Drupal генератор плагина виджета поля'
 options:
     module: common.options.module
-    class: 'Plugin class name'
-    label: 'Plugin label'
-    plugin-id: 'Plugin id'
-    field-type: 'Field type the plugin can be used with'
+    class: 'Название класса плагина'
+    label: 'Заголовок плагина'
+    plugin-id: 'ID  плагина'
+    field-type: 'Тип поля с которым плагин может быть использован'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin class name'
-    label: 'Enter the plugin label'
-    plugin-id: 'Enter the plugin id'
-    field-type: 'Enter the field type the plugin can be used with'
+    class: 'Введите название класса плагина'
+    label: 'Введите заголовок плагина'
+    plugin-id: 'Введите ID  плагина'
+    field-type: 'Введите тип поля с которым плагин может быть использован'
 examples:
     -
-        description: 'Generate a text type field widget plugin specifying the module name, the class, its label, the plugin id and the field type'
+        description: 'Генерирует плагин текстовый виджет поля по имени модуля, классу, заголовку, ID и типу поля'
         execution: "drupal generate:plugin:fieldwidget  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleFieldWidget\"  \\\n  --label=\"Example field widget\"  \\\n  --plugin-id=\"example_field_widget\"  \\\n  --field-type=\"text\"\n"
