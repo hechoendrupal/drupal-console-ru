@@ -1,31 +1,31 @@
-description: 'Generate a plugin condition.'
-help: 'The <info>generate:plugin:conditon</info> command helps you generate a plugin condition.'
-welcome: 'Welcome to the Drupal Plugin Condition generator'
+description: 'Генерирует плагин условия.'
+help: 'Команда <info>generate:plugin:conditon</info> помогает сгенерировать новый плагин условия.'
+welcome: 'Добро пожаловать, в Drupal генератор плагина условия'
 options:
     module: common.options.module
-    class: 'Plugin condition class name'
-    label: 'Plugin condition label'
-    plugin-id: 'Plugin condition id'
-    context-definition-id: 'Context definition ID'
-    context-definition-label: 'Context definition label'
-    context-definition-required: 'Context definition is requiered (TRUE/FALSE)'
+    class: 'Название класса плагина условия'
+    label: 'Заголовок плагина условия'
+    plugin-id: 'ID плагина условия'
+    context-definition-id: 'ID контекста определения'
+    context-definition-label: 'Заголовок контекста определения'
+    context-definition-required: 'Контекст определения обязателен (TRUE/FALSE)'
 questions:
     module: common.questions.module
-    class: 'Enter the plugin condition class name'
-    label: 'Enter the plugin condition label'
-    plugin-id: 'Enter the plugin condition id'
-    context-type: 'Context type'
-    context-entity-type: 'Context entity type'
-    context-definition-id: 'Context definition ID'
-    context-definition-label: 'Context definition label'
-    context-definition-required: 'Context definition is requiered'
+    class: 'Введите название класса плагина условия'
+    label: 'Введите заголовок плагина условия'
+    plugin-id: 'Введите ID плагина условия'
+    context-type: 'Тип контекста'
+    context-entity-type: 'Тип сущности контекста'
+    context-definition-id: 'ID контекста определения'
+    context-definition-label: 'Заголовок контекста определения'
+    context-definition-required: 'Контекст определения обязателен'
 examples:
     -
-        description: 'Generate a plugin condition for a node entity type specifying the module name, the class, the label, its id and the context definition'
+        description: 'Генерирует плагин условия для сущности нода по имени модуля, классу, заголовку, ID и контексту определения'
         execution: "drupal generate:plugin:condition  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleCondition\"  \\\n  --label=\"Example condition\"  \\\n  --plugin-id=\"example_condition\"  \\\n  --context-definition-id=\"entity:node\"  \\\n  --context-definition-label=\"node\"  \\\n  --context-definition-required"
     -
-        description: 'Generate a plugin condition for language specifying the module name, the class, the label, its id and the context definition'
+        description: 'Генерирует плагин условия для языка по имени модуля, классу, заголовку, ID и контексту определения'
         execution: "drupal generate:plugin:condition  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleCondition\"  \\\n  --label=\"Example condition\"  \\\n  --plugin-id=\"example_condition\"  \\\n  --context-definition-id=\"language\"  \\\n  --context-definition-label=\"Language\"  \\\n  --context-definition-required"
     -
-        description: 'Generate a plugin condition for role configuration specifying the module name, the class, the label, its id and the context definition'
+        description: 'Генерирует плагин условия для роли по имени модуля, классу, заголовку, ID и контексту определения'
         execution: "drupal generate:plugin:condition  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleCondition\"  \\\n  --label=\"Example condition\"  \\\n  --plugin-id=\"example_condition\"  \\\n  --context-definition-id=\"entity:user_role\"  \\\n  --context-definition-label=\"user_role\"  \\\n  --context-definition-required\n"
