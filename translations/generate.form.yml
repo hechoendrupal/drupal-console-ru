@@ -1,36 +1,36 @@
 description: 'Генерировать новую "%s"'
 help: 'Команда <info>"%s"</info> поможет генерировать новые "%s"'
-welcome: 'Добро пожаловать в генератор Drupal форм'
+welcome: 'Добро пожаловать, в генератор Drupal форм'
 options:
     module: common.options.module
     class: 'Название класса формы'
     form-id: 'Идентификатор формы'
     services: common.options.services
-    config-file: 'Add a config file'
+    config-file: 'Добавить config файл'
     inputs: common.options.inputs
-    path: 'Enter the form path'
-    menu-link-gen: 'Generate a menu link'
-    menu-link-title: 'A title for the menu link'
-    menu-parent: 'Menu parent'
-    menu-link-desc: 'A description for the menu link'
-    routing: 'Generate routing'
+    path: 'Введите путь формы'
+    menu-link-gen: 'Сгенерировать ссылку в меню'
+    menu-link-title: 'Название ссылки в меню'
+    menu-parent: 'Родительское меню'
+    menu-link-desc: 'Описание ссылки в меню'
+    routing: 'Сгенерировать маршрут'
 questions:
     module: common.questions.module
     class: 'Введите имя Класса Формы'
     form-id: 'Введите идентификатор Формы'
     services: common.questions.services
-    config-file: 'Do you want to generate a config file'
+    config-file: 'Вы хотите сгенерировать config файл?'
     inputs: common.questions.inputs
-    routing: 'Would you like to register a route for this form'
-    path: 'Enter the route path'
+    routing: 'Вы хотите создать маршрут для данной формы?'
+    path: 'Введите путь маршрута'
     menu_link_gen: 'Генерировать ссылку в меню'
     menu_link_title: 'Заголовок ссылки в меню'
     menu_parent: 'Родительское меню'
     menu_link_desc: 'Описание для ссылки в меню'
 examples:
     -
-        description: 'Generate an empty form with config file specifying the module name, the class, a form id and the path'
+        description: 'Генерирует пустую форму с config файлом по имени модуля, классу, ID формы и пути'
         execution: "drupal generate:form  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultForm\"  \\\n  --form-id=\"default_form\"  \\\n  --config-file  \\\n  --path=\"/modulename/form/default\""
     -
-        description: 'Generate a form with 2 fields and a config file specifying the module name, the class, a form id, the inputs and the path'
+        description: 'Генерирует форму с двумя полями и config файлом по имени модуля, классу, ID формы, введенным полям и пути'
         execution: "drupal generate:form  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultForm\"  \\\n  --form-id=\"default_form\"  \\\n  --config-file  \\\n  --inputs='\"name\":\"inputname\", \"type\":\"text_format\", \"label\":\"InputName\", \"options\":\"\", \"description\":\"Just a text input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --inputs='\"name\":\"email\", \"type\":\"email\", \"label\":\"Email\", \"options\":\"\", \"description\":\"Just an email input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --path=\"/modulename/form/default\""
