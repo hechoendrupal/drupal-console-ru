@@ -7,7 +7,7 @@ options:
     module-path: 'Путь до модуля'
     description: 'Описание модуля'
     core: 'Версия ядра'
-    features-bundle: 'Define module as feature using the given Features bundle name'
+    features-bundle: 'Определить модуль как feature, используя предоставленное имя пакета'
     package: 'Module package'
     module-file: 'Добавить файл .module'
     composer: 'Добавить файл composer.json'
@@ -21,15 +21,16 @@ questions:
     module-path: 'Введите путь до модуля'
     description: 'Введите описание модуля'
     core: 'Введите версию ядра Drupal'
-    package: 'Enter package name'
-    features-support: 'Define module as feature'
+    package: 'Введите название пакета'
+    features-support: 'Определить модуль как feature'
     features-bundle: 'Enter Features bundle name'
-    module-file: 'Хотите сгенерировать файл .module'
-    composer: 'Хотите добавить файл composer.json в ваш модуль'
-    dependencies: 'Хотите добавить зависимости для модуля'
-    test: 'Хотите сгенерировать класс юнит-тестов'
-    twigtemplate: 'Хотите сгенерировать шаблон темы'
-    controller: 'Хотите сгенерировать контроллер по-умолчанию'
+    features-bundle: 'Введите имя пакета для Features '
+    module-file: 'Хотите сгенерировать файл .module?'
+    composer: 'Хотите добавить файл composer.json в ваш модуль?'
+    dependencies: 'Хотите добавить зависимости для модуля?'
+    test: 'Хотите сгенерировать класс юнит-тестов?'
+    twigtemplate: 'Хотите сгенерировать шаблон темы?'
+    controller: 'Хотите сгенерировать контроллер по-умолчанию?'
 warnings:
     module-unavailable: 'Внимание, следующие модули недоступны в вашем локальном окружении "%s"'
 errors:
@@ -37,5 +38,5 @@ errors:
     directory-exists: 'Целевая директория "%s" не пуста.'
 examples:
     -
-        description: 'Generate a module specifying the module name, machine name, the path, its description, drupal core and the package name. In this example the composer file, the unit test and twig template are generated too'
+        description: 'Генерировать модуль по имени модуля, машинному имени, пути, описанию, версии ядра и имени пакета. В этом примере Composer файл, файл юнит-тестов и twig темплейт тоже будут сгенерированы'
         execution: "drupal generate:module  \\\n  --module=\"modulename\"  \\\n  --machine-name=\"modulename\"  \\\n  --module-path=\"/modules/custom\"  \\\n  --description=\"My Awesome Module\"  \\\n  --core=\"8.x\"  \\\n  --package=\"Custom\"  \\\n  --module-file  \\\n  --composer  \\\n  --test  \\\n  --twigtemplate"
