@@ -3,7 +3,7 @@ help: ''
 options:
     module: common.options.module
     entity-class: 'Класс контент сущности'
-    entity-name: 'ИМя контент сущности'
+    entity-name: 'Имя контент сущности'
     label: 'Заголовок'
     has-bundles: 'Сущность имеет связки'
     base-path: 'Базовые пути для маршрутов контент сущности'
