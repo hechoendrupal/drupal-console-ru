@@ -1,20 +1,20 @@
-description: 'Generate a new config entity'
+description: 'Генерирует сущность конфигурации'
 help: ''
 options:
     module: common.options.module
-    entity-class: 'The config entity class'
-    entity-name: 'The config entity name'
-    label: 'The label'
-    bundle-of: 'Acts as bundle for content entities'
-    base-path: 'The base-path for the config entity routes'
+    entity-class: 'Класс сущности конфигурации'
+    entity-name: 'Имя сущности конфигурации'
+    label: 'Заголовок'
+    bundle-of: 'Действовать как связка для контент сущностей'
+    base-path: 'Базовые пути для маршрутов сущности конфигурации'
 questions:
     module: common.questions.module
-    entity-class: 'Enter the class of your new config entity'
-    entity-name: 'Enter the name of your new config entity'
-    label: 'Enter the label of your new config entity'
-    bundle-of: 'Name of the content entity you want this (config) entity to act as a bundle for'
-    base-path: 'Enter the base-path for the config entity routes'
+    entity-class: 'Введите класс для новой сущности конфигурации'
+    entity-name: 'Введите имя для новой сущности конфигурации'
+    label: 'Введите заголовок для новой сущности конфигурации'
+    bundle-of: 'Имя контент сущности для которой вы хотите, чтобы сущность конфигурации действовала, как связка'
+    base-path: 'Введите базовые пути для маршрутов сущности конфигурации'
 examples:
     -
-        description: 'Generate config entity specifying the module, the entity class, the entity name, its path and label'
+        description: 'Генерирует сущность конфигурации по имени модуля, классу сущности, имени сущности, пути и заголовку'
         execution: "drupal generate:entity:config  \\\n  --module=\"modulename\"  \\\n  --entity-class=\"DefaultEntity\"  \\\n  --entity-name=\"default_entity\"  \\\n  --base-path=\"/admin/structure\"  \\\n  --label=\"Default entity\""
