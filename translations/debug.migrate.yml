@@ -8,5 +8,5 @@ messages:
     tags: Теги
 examples:
     -
-        description: 'Displays current migration'
+        description: 'Отображает информацию о текущей миграции'
         execution: "drupal debug:migrate\n"
