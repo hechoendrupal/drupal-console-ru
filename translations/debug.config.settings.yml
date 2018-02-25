@@ -5,5 +5,5 @@ messages:
     current: 'Текущий Ключ:значение в файле настроек'
 examples:
     -
-        description: 'Displays key:value as per the settings file'
+        description: 'Отображает текущий Ключ:значение в файле настроек'
         execution: "drupal debug:config:settings\n"
