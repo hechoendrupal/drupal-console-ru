@@ -7,11 +7,11 @@ messages:
     description: Описание
     requirements-error: 'Следующие требование не были завершены'
     module-list: 'Модули с отложенными обновлениями'
-    module-list-post-update: 'Modules with pending post updates'
+    module-list-post-update: 'Модули с отложенными обновлениями'
     module: Модуль
     update-n: 'update_N хук'
-    post-update: 'Post update function'
+    post-update: 'Функция выполняемая после обновления'
 examples:
     -
-        description: 'List of pending updates'
+        description: 'Отображает отложенные обновления'
         execution: "drupal debug:update\n"
