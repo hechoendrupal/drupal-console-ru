@@ -1,9 +1,9 @@
-description: 'Displays current cache context for the application.'
+description: 'Отображает текущий кеш контекст для приложения.'
 messages:
-    code: 'Context ID'
-    label: Label
-    class: 'Class path'
+    code: 'ID Контекст'
+    label: Заголовок
+    class: 'Путь класа'
 examples:
     -
-        description: 'Displays cache context'
+        description: 'Отображает кеш контекст'
         execution: "drupal debug:cache:context\n"
