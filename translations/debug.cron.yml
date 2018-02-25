@@ -4,5 +4,5 @@ messages:
     module: Модуль
 examples:
     -
-        description: 'Отображает все модули, которые имплементирует cron хук'
+        description: 'Отображает все модули, которые имплементируют cron хук'
         execution: "drupal debug:cron\n"
