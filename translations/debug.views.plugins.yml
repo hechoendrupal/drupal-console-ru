@@ -2,11 +2,11 @@ description: 'Отображает существующие плагины Пр�
 arguments:
     type: 'Отфильтровать плагины Представлений по типу'
 messages:
-    type: Type
-    name: Name
-    provider: Provider
-    views: Views
+    type: Тип
+    name: Имя
+    provider: Провайдер
+    views: Представление
 examples:
     -
-        description: 'List of views plugins'
+        description: 'Лист плагинов Представлений'
         execution: "drupal debug:views:plugins\n"
