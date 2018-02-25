@@ -1,9 +1,9 @@
-description: 'Displays breakpoints available in application'
+description: 'Отображает брейкпоинты досутпные в приложении'
 options:
-    group-name: 'Enter Breakpoint Group Name'
+    group-name: 'Введите группу брейкпоинтов'
 messages:
-    name: 'Extensions with breakpoints'
+    name: 'Расширения с брейкпоинтами'
 examples:
     -
-        description: 'Provide a group name.'
+        description: 'Отображает брейкпоинты для темы Bartik.'
         execution: 'drupal breakpoints:debug bartik'
