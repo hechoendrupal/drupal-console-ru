@@ -1,15 +1,15 @@
-description: 'Import module config.'
+description: 'Импортирует конфигурацию модуля.'
 help: ''
 options:
-    bundle: 'Bundle name'
+    bundle: 'Имя бандла'
 arguments:
-    packages: 'Package name'
+    packages: 'Имя пакета'
 questions:
-    packages: 'Enter package name to import'
+    packages: 'Введите имя пакета для импорта'
 messages:
-    no-packages: 'No packages available.'
-    not-available: 'Package %s, not available.'
-    importing: 'Importing package %s.'
-    uninstall: 'Package %s already installed.'
-    reverting: 'Reverting package %s.'
-    nothing: 'Nothing to import.'
+    no-packages: 'Нет доступных пакетов.'
+    not-available: 'Пакет %s, недоступен.'
+    importing: 'Импортируем пакет %s.'
+    uninstall: 'Пакет %s уже установлен.'
+    reverting: 'Откатываем пакет %s.'
+    nothing: 'Нечего импортировать.'
