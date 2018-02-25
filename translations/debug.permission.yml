@@ -1,5 +1,5 @@
 description: 'Показывает все права пользователей.'
-help: "Display all user permissions and also list all user permissions from a specific user role.\n\nList all user permissions:\n<info>drupal permission:debug</info>\n\nList all user permissions from a user role\n<info>drupal permission:debug authenticated</info>\n"
+help: "Отображает все права дотсупа пользователей и также все права дотсупа пользователей специфичной роли.\n\nОтображает все права доступа пользователей:\n<info>drupal permission:debug</info>\n\nОтображает все права дотсупа пользователей для специфичной роли\n<info>drupal permission:debug authenticated</info>\n"
 arguments:
     role: 'Пользовательская роль'
 messages:
