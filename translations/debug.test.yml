@@ -1,21 +1,20 @@
-description: 'List Test Units available for the application.'
-help: 'Update the console command to the latest version.'
+description: 'Отображает список доступных юнит тестов для приложения.'
+help: 'Отображает список доступных юнит тестов для приложения.'
 arguments:
-    test-class: 'Test Class'
+    test-class: 'Класс теста'
 options:
-    group: Group
+    group: Группа
 messages:
-    class: 'Test Class'
-    description: Description
-    group: Group
-    type: 'Test Type'
-    success: 'The console has been updated to the latest version.'
-    missing-dependency: 'Missing dependency'
-    methods: 'Test methods'
-    not-found: 'Debug wasn''t found, try enclosure test id between double quotes.'
-    success-groups: 'All testing groups were listed sucessfully, use the group argument to filter Test unit by group i.e $ drupal test:debug Url'
-    success-group: 'All test units for group "%s" were listed sucessfully'
+    class: 'Класс теста'
+    description: Описание
+    group: Группа
+    type: 'Тип теста'
+    missing-dependency: 'Несуществующие зависимости'
+    methods: 'Методы теста'
+    not-found: 'Отладчик не был найдет, попробуйте добавить двойнные кавычки вокруг ID теста.'
+    success-groups: 'Все юнит тесты были успешно отображены, используйте аргумент группы для того чтобы отфильтровать юнит тесты по группе, например  $ drupal test:debug Url'
+    success-group: 'Все юнит тесты для группы "%s" были успешно отображены'
 examples:
     -
-        description: ''
+        description: 'Отображает список доступных юнит тестов'
         execution: "drupal debug:test\n"
