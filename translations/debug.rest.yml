@@ -1,23 +1,23 @@
-description: 'Display current rest resource for the application'
+description: 'Отображает текущие rest ресурсы для приложения'
 arguments:
     resource-id: 'Rest ID'
 options:
-    status: 'Rest resource status enabled | disabled'
+    status: 'Отображает статус ресурса активен | выключен'
 messages:
     id: 'Rest ID'
-    label: Label
-    canonical-url: 'Canonical URL'
-    status: Status
-    provider: Provider
-    enabled: Enabled
-    disabled: Disabled
-    rest-state: 'REST States'
-    supported-formats: 'Supported Formats'
-    supported-auth: 'Supported Authentication Providers'
-    not-found: 'Rest resource "%s" not found'
-    canonical_url: 'Canonical URL'
-    supported_auth: 'Supported Authentication Providers'
+    label: Заголовок
+    canonical-url: 'Канонический URL'
+    status: Статус
+    provider: Провайдер
+    enabled: Включен
+    disabled: Выключен
+    rest-state: 'REST Состояния'
+    supported-formats: 'Поддерживаемые форматы'
+    supported-auth: 'Поддерживаемые провайдеры аутентификации'
+    not-found: 'Rest ресурс "%s" не найден'
+    canonical_url: 'Канонический URL'
+    supported_auth: 'Поддерживаемые провайдеры аутентификации'
 examples:
     -
-        description: 'Displays rest hooks'
+        description: 'Отображает rest хуки'
         execution: "drupal debug:rest\n"
