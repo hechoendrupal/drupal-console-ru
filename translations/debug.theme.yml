@@ -3,7 +3,7 @@ arguments:
     theme: 'Тема для отладки'
 messages:
     theme-id: Id
-    theme-name: Name
+    theme-name: Имя
     status: Статус
     version: Версия
     installed: Установлена
@@ -15,8 +15,8 @@ messages:
     theme-properties: Свойства
 examples:
     -
-        description: 'List of themes on the site'
+        description: 'Выводит темы сайта'
         execution: 'drupal debug:theme'
     -
-        description: 'Bartik theme information'
+        description: 'Информация о теме Bartik'
         execution: 'drupal debug:theme bartik'
