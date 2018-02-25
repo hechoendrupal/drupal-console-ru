@@ -1,13 +1,13 @@
-description: 'Show the current State keys.'
-help: 'Show the current State keys.'
+description: 'Показывает ключи текущего Состояния.'
+help: 'Показывает ключи текущего Состояния.'
 arguments:
-    key: 'The State key to debug.'
+    key: 'Ключ Состояния для отображения.'
 messages:
-    key: 'The State key'
+    key: 'Ключ Состояния'
 examples:
     -
-        description: 'List of the states on the site'
+        description: 'Отображает список состояний на сайте'
         execution: "drupal debug:state\n"
     -
-        description: 'Displays a detail of the state install_task tok from the list of states'
+        description: 'Отображает детали Состояния install_task из списка состояний'
         execution: "drupal debug:state install_task\n"
