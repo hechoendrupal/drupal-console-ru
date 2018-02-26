@@ -1,9 +1,9 @@
-description: 'Poll the watchdog and print new log entries every x seconds'
+description: 'Опрашивает watchdog и распечатывает новые записи в логе каждые x секунд'
 arguments:
-    duration: 'Duration in seconds which to sleep between database reads'
+    duration: 'Период в секундах между чтением базы данных'
 messages:
-    warning: "Do not use in production environments\nAs this script blocks you are advised to only run it on vm's with multiple cores for performance reasons\nStop this polling mechanism before you clean/truncate the watchdog table!\nQuit with ^C\n"
+    warning: "Не используйте продакшн окружение\nТак как этот скрипт рекомендуется запускать только на виртуальных машинах с мультиядерными процессорами из-за проблем с производительностью\nОстановите механизм опроса перед тем как отчистить watchdog таблицу\nВы можете выйти из скрипта с помощью клавиши ^C\n"
 examples:
     -
-        description: 'Print the log entries on screen every x seconds'
+        description: 'Печатает лог записи на экране каждые x секунд'
         execution: "drupal database:log:poll \\\n  100\n"
