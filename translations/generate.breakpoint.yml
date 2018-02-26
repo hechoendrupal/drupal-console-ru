@@ -1,18 +1,18 @@
-description: 'Generate breakpoint'
-help: 'The <info>generate:theme</info> command helps you generates a new breakpoint'
-welcome: 'Welcome to the Drupal breakpoint generator'
+description: 'Генерирует брейкпоинт'
+help: 'Команда <info>generate:breakpoint</info> помогает сгенерировать новый брейкпоинт'
+welcome: 'Добро пожаловать, Drupal генератор брейкпоинт'
 options:
-    theme: 'Theme name'
-    breakpoints: Breakpoints
+    theme: 'Имя темы'
+    breakpoints: Брейкпоинты
 questions:
-    theme: 'Enter the theme name (i.e. classy, stable)'
-    breakpoint-name: 'Enter breakpoint name'
-    breakpoint-label: 'Enter breakpoint label'
-    breakpoint-media-query: 'Enter breakpoint media query'
-    breakpoint-weight: 'Enter breakpoint weight'
-    breakpoint-multipliers: 'Enter breakpoint multipliers'
-    breakpoint-add: 'Do you want to add another breakpoint'
+    theme: 'Введите имя темы (например classy, stable)'
+    breakpoint-name: 'Введите имя брейкпоинта'
+    breakpoint-label: 'Введите заголовок брейкпоинта'
+    breakpoint-media-query: 'Введите медиа запрос для брейкпоинта'
+    breakpoint-weight: 'Введите вес брейкпоинта'
+    breakpoint-multipliers: 'Введите умножитель брейкпоинта'
+    breakpoint-add: 'Вы хотите добавить еще один брейкпоинт?'
 examples:
     -
-        description: 'Generate a breakpoint specifying the theme, a breakpoint name, its label, the media query, its weight and multipliers'
+        description: 'Генерирует брейкпоинт по имени темы, имени брейкпоинта, заголовку, медиа запросу, весу и умножителю'
         execution: "drupal generate:breakpoint  \\\n  --theme=\"classy\"  \\\n  --breakpoints='\"breakpoint_name\":\"narrow\", \"breakpoint_label\":\"narrow\", \"breakpoint_media_query\":\"all and (min-width: 560px) and (max-width: 850px)\", \"breakpoint_weight\":\"1\", \"breakpoint_multipliers\":\"1x\"'"
