@@ -1,6 +1,6 @@
 description: 'Удалить события из таблицы DBLog, фильтры доступны'
 arguments:
-    event-id: 'DBLog event ID'
+    event-id: 'DBLog ID события'
 options:
     type: 'Отфильтровать события по указанному типу'
     severity: 'Отфильтровать события по указанному уровню важности'
@@ -11,8 +11,8 @@ messages:
     clear-sucess: 'События успешно очищены'
 examples:
     -
-        description: 'Clear the database log from DBLog table'
+        description: 'Отчистить лог базы данных из таблицы DBLog'
         execution: "drupal database:log:clear \\\n  <database>"
     -
-        description: 'Clear the database log from DBLog table using filters'
+        description: 'Отчистить лог базы данных из таблицы DBLog, используя фильтры'
         execution: "drupal database:log:clear \\\n  <database> \\\n  --type=TYPE \\\n  --severity=SEVERITY"
