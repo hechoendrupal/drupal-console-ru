@@ -30,8 +30,8 @@ messages:
     created-comments: '"%s" комментариев создано успешно'
 examples:
     -
-        description: 'Provide the node id where the comments will be generated.'
+        description: 'Создает комментарий для указанного нод ID.'
         execution: 'drupal create:comments  node-id'
     -
-        description: 'Provide number of comments to generate, max title words and time range.'
+        description: 'Создает комментарий для указанного нод ID с определенным количеством слов в название и датой создания.'
         execution: "drupal create:comments  node-id \\\n  --limit=\"2\" \\\n  --title-words=\"5\" \\\n  --time-range=\"1\"\n"
