@@ -14,5 +14,5 @@ messages:
     error: 'Ошибка при создании словарей: "%s"'
 examples:
     -
-        description: 'Provide the number of vocabularies to create and maximum number of words in vocabulary names'
+        description: 'Предоставляет количество словарей, которые будут созданы с максимальным количеством слов в именах'
         execution: "drupal create:vocabularies \\\n  --limit=\"5\" \\\n  --name-words=\"5\"\n"
