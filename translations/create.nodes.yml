@@ -28,8 +28,9 @@ messages:
     created-nodes: '"%s" материалов создано успешно.'
 examples:
     -
-        description: 'Provide the content type name.'
+
+        description: 'Создает ноды для указанного типа.'
         execution: 'drupal create:nodes content-name'
     -
-        description: 'Provide the limit of publications, limit of title words, time range and language.'
+        description: 'Создает определенное количество нодов указанного типа, датой создания, языка и с указанным количество слов в название.'
         execution: "drupal create:nodes content-name \\\n  --limit=\"5\" \\\n  --title-words=\"5\" \\\n  --time-range=\"1\" \\\n  --language=\"und\"\n"
