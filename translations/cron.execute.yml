@@ -3,11 +3,11 @@ messages:
     module-invalid: 'В модуле "%s" не найдена cron реализация'
     executing-cron: 'Выполнение cron-задачи в модуле "%s"'
     success: 'Все cron реализации были выполнены успешно'
-    lock: 'Attempting to re-run cron while it is already running'
+    lock: 'Попытка перезапустить cron в то время, когда он запущен'
 examples:
     -
-        description: 'Execute the cron globally'
+        description: 'Запустить cron глобально'
         execution: "drupal cron:execute\n"
     -
-        description: 'Execute the cron on the specified module'
+        description: 'Запустить cron для специфичного модуля'
         execution: "drupal cron:execute \\\n  <module>\n"
