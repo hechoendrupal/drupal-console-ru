@@ -5,9 +5,9 @@ options:
     file: 'Имя файла резервной копии базы данных'
 messages:
     success: 'База данных импортирована из:'
-    no-file: 'Missing file option'
+    no-file: 'Отсутствующая опция file'
 help: 'Восстановление структуры и содержимого базы данных.'
 examples:
     -
-        description: 'Restore the database file dump to the database default or another one specified'
+        description: 'Восстанавливает бэкап базы данных в базу данных по умолчанию или любую другую указанную базу данных'
         execution: "drupal database:restore \\\n  --file='/srv/dump/db.sql'\n"
