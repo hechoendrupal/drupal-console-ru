@@ -2,10 +2,10 @@ description: 'Показать текущий журнал событий при
 arguments:
     event-id: 'Идентификатор события в DBLog'
 options:
-    asc: 'List events in ascending order'
+    asc: 'Список событий в восходящем порядке'
     limit: 'Ограничить количество результатов заданным числом'
     offset: 'Смещение стартовой позиции'
-    yml: 'Print in a yml style'
+    yml: 'Распечатать в yml стиле'
     type: 'Фильтрация событий по типу'
     severity: 'Фильтрация событий по уровню важности'
     user-id: 'Фильтрация событий по идентификатору пользователя'
@@ -20,8 +20,8 @@ messages:
     invalid-severity: 'Тип важности задан неверно, фильтр проигнорирован'
 examples:
     -
-        description: 'List all the entries on the log'
+        description: 'Отобразить все записи в логе'
         execution: 'drupal debug:database:log'
     -
-        description: 'List specific log entry by Event ID'
+        description: 'Отобразить специфичную запись лога по ID события'
         execution: "drupal debug:database:log 21228\n"
