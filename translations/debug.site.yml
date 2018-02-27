@@ -8,11 +8,11 @@ messages:
     invalid-site: 'Некорректное имя сайта'
     private-key: 'Ошибка с приватным ключом'
     connect-error: 'Ошибка удаленного подключения'
-    directory-not-found: 'Sites local directory not found'
+    directory-not-found: 'Сайты локальной директории не найдены'
 options:
-    target: Target
-    property: Property
+    target: Цель
+    property: Свойство
 examples:
     -
-        description: ''
+        description: 'Выводит список сайтов'
         execution: "drupal debug:site\n"
