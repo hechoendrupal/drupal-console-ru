@@ -1,19 +1,19 @@
-description: 'Displays current routes for the application'
+description: 'Отображает текущие маршруты для приложения'
 arguments:
-    route-name: 'Route names'
+    route-name: 'Имена маршрутов'
 messages:
-    name: 'Route name'
-    class: 'Class path'
-    route: Route
-    path: 'Class path'
-    defaults: Defaults
-    requirements: Requirements
-    options: Options
-    pattern: Pattern
+    name: 'Имя маршрута'
+    class: 'Путь класса'
+    route: Маршрут
+    path: 'Путь класса'
+    defaults: 'Значения по умолчанию'
+    requirements: Требования
+    options: Опции
+    pattern: Паттерны
 examples:
     -
-        description: 'Displays current routes for the application'
+        description: 'Отображает текущие маршруты для приложения'
         execution: 'drupal rod'
     -
-        description: 'Displays details for the route user.page (/user)'
+        description: 'Отображает детали для маршрута user.page (/user)'
         execution: 'drupal rod user.page'
