@@ -2,10 +2,10 @@ description: 'Список всех мультисайтов доступных 
 help: '<info>multisite:debug</info> список всех известных мультисайтов.'
 messages:
     no-multisites: 'Мультисайтинг не настроен'
-    site: Site
-    directory: Directory
+    site: Сайт
+    directory: Директория
     site-format: 'Сайты описаны в формате: <port>.<domain>.<path>'
 examples:
     -
-        description: 'Displays multisite information'
+        description: 'Отображает информацию о всех мультисайтов'
         execution: "drupal debug:multisite\n"
