@@ -1,5 +1,5 @@
 description: 'Отображение текущих модулей доступных для приложения'
-module: 'Module name'
+module: 'Имя модуля'
 options:
     status: 'Статус модуля [включен|выключен]'
     type: 'Тип модуля [ядро|не ядро]'
@@ -9,9 +9,9 @@ messages:
     status: Статус
     origin: Источник
     package: Пакет
-    installed: Installed
-    uninstalled: Uninstalled
-    version: Version
+    installed: Установленные
+    uninstalled: Неустановленные
+    version: Версия
     schema-version: 'Версия схемы'
     total-downloads: 'Всего установок'
     total-monthly: 'Установок за месяц'
@@ -21,8 +21,8 @@ messages:
     disabled: Выключен
 examples:
     -
-        description: 'Display all installed modules'
+        description: 'Отображает все установленные модули'
         execution: 'drupal mod --status=installed'
     -
-        description: 'Display all installed and no core modules'
+        description: 'Отображает все установленные модули и модули не ядра'
         execution: 'drupal mod --status=installed --type=no-core'
