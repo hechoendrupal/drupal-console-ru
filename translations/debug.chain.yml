@@ -1,4 +1,4 @@
-description: 'List available chain files.'
+description: 'Список доступных chain файлов.'
 messages:
-    directory: Directory
-    file: 'Chain file name.'
+    directory: Директория
+    file: 'Имя chain файла.'
