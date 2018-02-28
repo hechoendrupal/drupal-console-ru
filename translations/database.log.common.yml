@@ -1,12 +1,12 @@
 options:
-    type: 'Filter events by a specific type'
-    severity: 'Filter events by a specific level of severity'
-    user-id: 'Filter events by a specific user id'
+    type: 'Фильтрует события по специфичному типу'
+    severity: 'Фильтрует события по специфичному уровню критичности'
+    user-id: ''Фильтрует события по специфичному ID пользователя'
 messages:
-    event-id: 'Event ID'
-    type: Type
-    date: Date
-    message: Message
-    user: User
-    severity: Severity
-    invalid-severity: 'Severity type is invalid, filter was ignored'
+    event-id: 'ID события'
+    type: Тип
+    date: Дата
+    message: Сообщение
+    user: Пользователь
+    severity: Критичность
+    invalid-severity: 'Тип критичности некорректен, фильтр проигнорирован'
