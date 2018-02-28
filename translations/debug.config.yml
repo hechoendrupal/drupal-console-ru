@@ -5,11 +5,12 @@ errors:
     not-exists: 'Конфигурация "%s" не существует.'
 examples:
     -
-        description: 'List all configuration object names.'
+        description: 'Отображает все имена объектов конфигурации.'
         execution: 'drupal config:debug'
     -
         description: 'Display system site configurations values.'
+        description: 'Отображает все значения конфигурации для system.site.'
         execution: 'drupal config:debug system.site'
     -
-        description: 'List all system configuration names.'
+        description: 'Выводит все имена кофигурации содержащие system.'
         execution: 'drupal config:debug | grep system'
