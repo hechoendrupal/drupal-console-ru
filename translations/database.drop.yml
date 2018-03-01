@@ -9,5 +9,5 @@ messages:
     table-drop: 'Таблицы "%s" удалены успешно'
 examples:
     -
-        description: 'Drop the tables on the database specified on the argument'
+        description: 'Удаляет таблицы базы данных переданной в аргументе'
         execution: "drupal database:drop \\\n  <database>\n"
