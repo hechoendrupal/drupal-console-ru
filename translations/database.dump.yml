@@ -3,13 +3,13 @@ arguments:
     database: 'Ключ базы данных из settings.php'
 options:
     file: 'Имя файла резервной копии базы данных'
-    gz: 'Pass this option if you want the sql result file gzipped'
+    gz: 'Передайте эту опцию, если вы хотите чтобы результирующий sql файл был сжат, как gzip архив'
 messages:
     success: 'База данных экспортирована в:'
 examples:
     -
-        description: 'Dump default database or the one specified on the argument'
+        description: 'Создаёт бэкап базы данных по умолчанию или базы данных указанной, как аргумент'
         execution: "drupal database:dump \\\n  <database>"
     -
-        description: 'Dump in gz compressed format'
+        description: 'Создаёт бэкап базы данных в формате gz архива'
         execution: "drupal database:dump \\\n  --gz"
