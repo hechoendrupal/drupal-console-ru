@@ -8,5 +8,5 @@ messages:
     connection: 'Соединение: "%s"'
 examples:
     -
-        description: 'Connects to an specified database, or the default if not arguments passed'
+        description: 'Устанавливает соединение с указанной базой данных или базой данных по умолчанию, если аргумент не был передан'
         execution: "drupal database:connect \\\n  <database>\n"
