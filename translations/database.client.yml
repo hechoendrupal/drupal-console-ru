@@ -5,5 +5,5 @@ messages:
     connection: 'Соединение: "%s"'
 examples:
     -
-        description: 'Launch the default client or could launch another regarding the specification on the argument'
+        description: 'Запускает клиент по умолчанию или запускает клиент на основе спецификации переданной в аргументе'
         execution: "drupal database:client <database>\n"
