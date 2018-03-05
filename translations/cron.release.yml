@@ -3,5 +3,5 @@ messages:
     released: 'Блокировка cron-а была успешно снята'
 examples:
     -
-        description: 'Execute the cron globally'
+        description: 'Запускает cron глобально'
         execution: "drupal cron:execute\n"
