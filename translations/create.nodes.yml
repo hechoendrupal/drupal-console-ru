@@ -28,7 +28,6 @@ messages:
     created-nodes: '"%s" материалов создано успешно.'
 examples:
     -
-
         description: 'Создает ноды для указанного типа.'
         execution: 'drupal create:nodes content-name'
     -
