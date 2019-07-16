@@ -4,15 +4,21 @@ options:
 questions:
     chain-file: 'Выберите файл с последовательностью команд (chain) для извлечения'
 messages:
-    missing_file: 'Необходимо указать действительный путь и имя файла.'
-    invalid_file: 'Файл "%s" не найден.'
-    module_install: 'Команда module:install не может быть выполнена внутри последовательности команд и должна быть запущена независимо.'
+    missing-file: 'You must provide a valid file path and name.'
+    invalid-file: 'The file "%s" does not exist.'
+    module-install: 'module:install command is not runnable inside a chain queue and must be run independently.'
     missing-environment-placeholders: 'Отсутствующие заменители окружения "%s"'
     set-environment-placeholders: 'Установить заменители окружения как:'
     missing-inline-placeholders: 'Отсутствующие встроенные заменители "%s"'
     set-inline-placeholders: 'Передать встроенный заменитель как:'
     select-value-for-placeholder: 'Выберите значение для %s заменителя'
     enter-value-for-placeholder: 'Введите значение для %s заменителя'
+    legacy-inline: 'Update inline legacy placeholders from %{{name}} to {{name}}.'
+    legacy-environment: 'Update environment legacy placeholders from ${{(NAME}} or %env(NAME)% to {{env("NAME")}}.'
+    metadata-registration: "You should register your chain file as command by providing metadata, more info at:\n   https://docs.drupalconsole.com/en/chains/registering.html"
+    missing_file: 'Необходимо указать действительный путь и имя файла.'
+    invalid_file: 'Файл "%s" не найден.'
+    module_install: 'Команда module:install не может быть выполнена внутри последовательности команд и должна быть запущена независимо.'
 examples:
     -
         description: 'Предоставление опции file, используя полный путь до файла.'

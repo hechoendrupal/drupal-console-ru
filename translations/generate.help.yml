@@ -1,5 +1,6 @@
 description: 'Сгенерировать реализацию hook_help()'
 help: 'The <info>"%s"</info> command helps you generate a hook help "%s"'
+welcome: 'Welcome to the Drupal Help generator'
 options: null
 questions: null
 messages:

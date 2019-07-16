@@ -1,4 +1,8 @@
 description: 'Добавить поддержку языка вашим сайтом'
 messages:
     invalid-language: 'Язык "%s" является недопустимым языком'
+    invalid-languages: 'Languages "%s" are invalid'
     language-add-successfully: 'Язык "%s" был успешно добавлен.'
+    languages-add-successfully: 'Languages "%s" were added successfully.'
+    language-installed: 'Language "%s" is already installed.'
+    languages-installed: 'Languages "%s" are already installed.'

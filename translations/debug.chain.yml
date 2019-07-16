@@ -2,3 +2,5 @@ description: 'Список доступных chain файлов.'
 messages:
     directory: Директория
     file: 'Имя chain файла.'
+    command: 'Command name.'
+    no-files: 'No chain files found.'

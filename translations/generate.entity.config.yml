@@ -1,10 +1,11 @@
 description: 'Генерирует сущность конфигурации'
 help: ''
+welcome: 'Welcome to the Drupal Config Entity generator'
 options:
     module: common.options.module
     entity-class: 'Класс сущности конфигурации'
     entity-name: 'Имя сущности конфигурации'
-    label: 'Заголовок'
+    label: Заголовок
     bundle-of: 'Действовать, как бандл для контент сущностей'
     base-path: 'Базовые пути для маршрутов сущности конфигурации'
 questions:

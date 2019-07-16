@@ -3,6 +3,7 @@ options:
     destination: 'Каталог куда будут скопированы файлы'
     override: 'Перезаписать конфигурационные файлы'
     autocomplete: 'Флаг автозаполнения файлов.'
+    site: 'Use local site as destination.'
 questions:
     destination: 'Выберите каталог куда будет скопирована конфигурация'
     autocomplete: 'Сгенерировать файлы автозаполнения'
@@ -13,3 +14,7 @@ questions:
     learning: 'Показывать информацию для обучения?'
     generate-inline: 'Показывать представление извлеченной команды в командной строке?'
     generate-chain: 'Показывать представление извлеченной команды в цепочке выполняемых команд?'
+    statistics: 'Allow to collect and send this information to drupalConsole server?'
+messages:
+    statistics: "Help us improve the Drupal Console project, providing information about how you use the application.\nThe colleted information at \"%s\", would be:\n\n- Used language\n- Executed command\n- Generated lines of code\n\nYou could read about our privacy policy at http://drupalconsole.com/privacy.\n"
+    statistics-disable: "You can stop sending information using the following command:\n\ndrupal settings:set statistics.enabled false\n"

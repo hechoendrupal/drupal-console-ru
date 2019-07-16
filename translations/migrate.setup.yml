@@ -7,6 +7,7 @@ options:
     db-pass: 'Пароль базы данных'
     db-prefix: 'Префикс базы данных'
     db-port: 'Порт базы данных'
+    source-base-path: 'Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)'
     source-base_path: 'Локальный каталог содержащий код вашего сайта (например /var/www/docroot), или адрес вашего сайта (например http://example.com)'
     files-directory: 'Каталог файлов'
 questions:
@@ -17,6 +18,7 @@ questions:
     db-pass: 'Пароль базы данных'
     db-prefix: 'Префикс базы данных'
     db-port: 'Порт базы данных'
+    source-base-path: 'Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)'
     source-base_path: 'Локальный каталог содержащий код вашего сайта (например /var/www/docroot), или адрес вашего сайта (например http://example.com)'
     files-directory: 'Каталог файлов'
 messages:

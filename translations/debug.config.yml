@@ -1,6 +1,8 @@
 description: 'Показывает текущую конфигурацию.'
 arguments:
     name: 'Имя конфигурации.'
+options:
+    show-overridden: 'Show overridden configurations.'
 errors:
     not-exists: 'Конфигурация "%s" не существует.'
 examples:
@@ -9,8 +11,10 @@ examples:
         execution: 'drupal config:debug'
     -
         description: 'Display system site configurations values.'
-        description: 'Отображает все значения конфигурации для system.site.'
         execution: 'drupal config:debug system.site'
     -
         description: 'Выводит все имена кофигурации содержащие system.'
         execution: 'drupal config:debug | grep system'
+    -
+        description: 'List all configuration including overridden values.'
+        execution: 'drupal debug:config --show-overridden'

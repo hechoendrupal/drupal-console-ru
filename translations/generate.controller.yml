@@ -24,7 +24,6 @@ questions:
     controller-add: 'Вы хотите добавить другой метод контроллера?'
     controller: 'Имя контроллера'
     method-name: 'Enter the action method name'
-    method-name: 'Введите название метода'
     other-controller-title: 'Имя контроллера (пустое для начала генерации кода)'
     controller-title: 'Имя контроллера'
 messages:

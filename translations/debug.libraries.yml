@@ -2,8 +2,10 @@ description: 'Выводит библиотеки, доступные в при�
 options:
     name: 'Введите имя библиотеки'
 messages:
-    name: 'Расширение с библиотеками'
+    extension: Extension
+    library: Library
     info: 'Информация о библиотеках'
+    name: 'Расширение с библиотеками'
 examples:
     -
         description: 'Список всех доступных библиотек'
@@ -11,3 +13,6 @@ examples:
     -
         description: 'Информация о block библиотеке'
         execution: "drupal debug:libraries block\n"
+    -
+        description: 'List block/drupal.block library'
+        execution: "drupal debug:libraries block/drupal.block\n"

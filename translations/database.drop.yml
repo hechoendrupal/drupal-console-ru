@@ -2,6 +2,7 @@ description: 'Удалить все таблицы в данной базе да
 help: 'Команда <info>database:drop</info> поможет вам удалить таблицы базы данных.'
 arguments:
     database: 'Ключ баы данных из settings.php'
+    target: 'Database target from settings.php'
 question:
     drop-tables: 'Подтвердите, что вы действительно хотите удалить все таблицы в базе данных "%s"?'
 messages:

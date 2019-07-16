@@ -1,8 +1,6 @@
 description: 'Экспорт конфигурации в yml файл.'
-arguments:
-    name: 'Имя конфигурации.'
-    config-name: 'Имя конфигурации.'
 options:
+    name: 'Configuration name.'
     include-dependencies: 'Экспортировать зависимости конфигурации.'
     simple-configuration: 'Простая конфигурация'
     optional: 'Экспорт конфигурации как дополнительной YAML конфигурации в вашем модуле'

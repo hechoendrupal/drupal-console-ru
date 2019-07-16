@@ -4,23 +4,30 @@ welcome: 'Добро пожаловать, Drupal генератор плаги�
 options:
     module: common.options.module
     class: 'Имя класса плагина'
-    label: 'Заголовок плагина'
+    plugin-label: 'Plugin label'
     plugin-id: 'ID плагина'
     inputs: common.options.inputs
     services: common.options.services
     theme-region: 'Регион темы для отображения плагина блока'
+    twigtemplate: 'Generate theme template'
+    label: 'Заголовок плагина'
 questions:
     module: common.questions.module
     class: 'Введите имя класса плагина'
-    label: 'Введите заголовок плагина'
+    plugin-label: 'Enter the plugin label'
     plugin-id: 'Введите ID плагина'
-    inputs: common.questions.inputs
     services: common.questions.services
     theme-region: 'Введите регион темы для отображения плагина блока.'
+    type: 'Enter New field type'
+    label: 'Введите заголовок плагина'
+    description: Description
+    default-value: 'Default value'
+    weight: 'Weight for input item'
+    twigtemplate: 'Do you want to generate a themeable template?'
+    inputs: common.questions.inputs
 messages:
     inputs: "\nВы можете ввести поля для создания специальной конфигурации блока.\nЭто опционально, нажмите <info>ввод</info> для <info>продолжения</info>"
     invalid-theme-region: 'Region "%s" is invalid'
-    invalid-theme-region: 'Регион "%s" неверный'
 examples:
     -
         description: 'Генерирует плагин блока в регионе header по имени модуля, классу, заголовку, ID, региону и вводу полей'

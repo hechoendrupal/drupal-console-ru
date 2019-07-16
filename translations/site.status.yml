@@ -30,7 +30,7 @@ messages:
     directory_theme_admin: 'Каталог темы административной части сайта'
     current_version: 'Текущая версия Drupal ("%s")'
     not_installed: 'Drupal не установлен'
-    not_available: 'Недоступен'
+    not_available: Недоступен
     configuration: Конфигурация
     active: 'Активный путь конфигурации'
     staging: 'Путь конфигурации для Staging'

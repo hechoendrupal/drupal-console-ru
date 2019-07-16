@@ -3,12 +3,16 @@ help: 'Команда <info>entity:delete</info> позволяет вам уд�
 arguments:
     entity-definition-id: 'Идентификатор определения сущности'
     entity-id: 'Идентификатор сущности для удаления'
+options:
+    all: 'Delete all entities of the given type.'
 questions:
     entity-type: 'Введите тип сущности'
     entity-definition-id: 'Введите идентификатор определения сущности'
     entity-id: 'Введите идентификатор сущности для удаления'
 messages:
+    confirm-delete-all: 'Do you want to delete all entities of type "%s" ("%d")?'
     deleted: 'Сущность %s с идентификатором %s успешно удалена'
+    deleted-all: 'All entities of type "%s" ("%d") were deleted.'
 examples:
     -
         description: 'Удалить контентную сущность, используя идентификатор ноды'

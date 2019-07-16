@@ -1,16 +1,22 @@
 description: 'Экспорт представления в YAML формат внутри модуля для повторного использования на другом сайте.'
 messages:
-    view_exported: 'Экспорт представления'
+    view-exported: 'View exported sucessfully'
     depencies-included: 'Следующие зависимости модуля были включены в "%s"'
+    wrong-view: 'The view "%s" does not exist'
+    view_exported: 'Экспорт представления'
 questions:
     view: 'Представление для экспорта'
     optional-config: 'Экспорт представления в модуль как дополнительную конфигурацию'
     include-module-dependencies: 'Включить зависимости модуля представления в YAML файл'
+    remove-uuid: 'The view to be exported without uuid key.'
+    remove-config-hash: 'The view to be exported without the default site hash key.'
 arguments:
     view-id: 'ID представления'
 options:
     optional-config: 'Экспорт представления в модуль как дополнительную YAML конфигурацию'
     include-module-dependencies: 'Включить зависимости модуля в info YAML файл модуля'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
 examples:
     -
         description: 'Предоставьте id представления'
@@ -18,3 +24,6 @@ examples:
     -
         description: 'Вы можете предоставить интерактивные значения как параметры.'
         execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
+    -
+        description: 'Export as config for the provided module, updating the module''s info.yml with any module dependencies from the view.'
+        execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies"

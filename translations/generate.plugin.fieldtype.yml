@@ -17,6 +17,8 @@ questions:
     description: 'Введите описание плагина'
     default-widget: 'Введите виджет по умолчанию для этого типа поля'
     default-formatter: 'Введите форматтер по умолчанию для этого типа поля'
+suggestions:
+    my-field-type: 'My Field Type'
 examples:
     -
         description: 'Генерирует плагин типа поля по имени модуля, классу, заголовку, ID  плагина и описанию'

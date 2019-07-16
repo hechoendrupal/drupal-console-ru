@@ -16,6 +16,8 @@ questions:
     table: 'Введите название таблицы'
     alias: 'Введите алиас для таблицы'
     group-by: 'Введите поле по которому вы хотите сгруппировать результаты, если это необходимо'
+    id: 'Enter the field id or press <info>enter</enter> if done'
+    description: 'Enter the field description'
     fields:
         id: 'Введите ID поля или нажмите <info>Ввод</enter> если вы закончили'
         description: 'Введите описание поля'

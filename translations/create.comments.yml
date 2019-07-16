@@ -28,6 +28,7 @@ messages:
     created: 'Время создания'
     invalid-content-types: 'Типы содержимого "%s" недопустимы'
     created-comments: '"%s" комментариев создано успешно'
+    error: 'Error creating comments: "%s"'
 examples:
     -
         description: 'Создает комментарий для указанного нод ID.'

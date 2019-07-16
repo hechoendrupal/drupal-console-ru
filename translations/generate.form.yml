@@ -20,13 +20,28 @@ questions:
     form-id: 'Введите идентификатор Формы'
     services: common.questions.services
     config-file: 'Вы хотите сгенерировать config файл?'
-    inputs: common.questions.inputs
     routing: 'Вы хотите создать маршрут для данной формы?'
     path: 'Введите путь маршрута'
+    max-amount-characters: 'Maximum amount of characters'
+    textfield-width-in-chars: 'Width of the textfield (in characters)'
+    multiselect-size-in-lines: 'Size of multiselect box (in lines)'
+    input-options: 'Input options separated by comma'
+    menu-link-gen: 'Generate a menu link'
+    menu-link-title: 'Enter a title for the menu link'
+    menu-parent: 'Enter Menu parent'
+    menu-link-desc: 'Enter a description for the menu link'
+    type: 'Enter New field type'
+    label: 'Input label'
+    description: Description
+    default-value: 'Default value'
+    weight: 'Weight for input item'
+    inputs: common.questions.inputs
     menu_link_gen: 'Генерировать ссылку в меню'
     menu_link_title: 'Заголовок ссылки в меню'
     menu_parent: 'Родительское меню'
     menu_link_desc: 'Описание для ссылки в меню'
+suggestions:
+    description-for-menu: 'A description for the menu entry'
 examples:
     -
         description: 'Генерирует пустую форму с config файлом по имени модуля, классу, ID формы и пути'

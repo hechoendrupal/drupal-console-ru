@@ -10,8 +10,10 @@ options:
     package: 'Пакет темы'
     composer: 'Добавить файл composer.json'
     base-theme: 'Базовая тема (например, classy, stable)'
+    base-theme-regions: 'Add the default regions of the chosen base theme'
     global-library: 'Имя глобальной библиотеки стилей'
-    regions: 'Регионы'
+    libraries: Libraries
+    regions: Регионы
     breakpoints: 'Контрольные точки'
 questions:
     theme: 'Введите название новой темы'
@@ -37,6 +39,9 @@ questions:
     breakpoint-weight: 'Введите вес контрольной точки'
     breakpoint-multipliers: 'Введите множитель для контрольной точки'
     breakpoint-add: 'Вы хотите добавить еще одну контрольную точку'
+suggestions:
+    my-awesome-theme: 'My Awesome theme'
+    other: Other
 warnings:
     module-unavailable: 'Предупреждение, текущие модули недоступны в вашем локальном окружении "%s"'
 errors:

@@ -1,5 +1,6 @@
 description: 'Генерирует плагин форматер изображения.'
 help: 'Команда <info>generate:plugin:imageformatter</info> помогает сгенерировать новый плагин форматер изображения.'
+welcome: 'Welcome to the Drupal Image Formatter Plugin generator'
 options:
     module: common.options.module
     class: 'Название класса плагина'

@@ -25,6 +25,7 @@ messages:
     username: 'Имя пользователя'
     created: 'Время создания'
     created-users: '"%s" пользователей создано успешно.'
+    error: 'Error creating users: "%s"'
 examples:
     -
         description: 'Создает пользователей на основе указанной роли.'

@@ -7,12 +7,12 @@ options:
 messages:
     fields-none: 'Поля не найдены'
     entity-type: 'Тип сущности с полями'
-    bundle-type: 'Бандл'
+    bundle-type: Бандл
     not-found: 'не найдено'
     in-entity-type: 'в типе сущности'
     in-bundle-type: 'в бандле'
 table:
     header-name: 'Имя поля'
     header-type: 'Тип поля'
-    header-desc: 'Описание'
+    header-desc: Описание
     header-usage: 'Также используется в'

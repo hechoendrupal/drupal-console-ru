@@ -1,11 +1,14 @@
 description: 'Генерирует новую контент сущность'
 help: ''
+welcome: 'Welcome to the Drupal Content Entity generator'
 options:
     module: common.options.module
     entity-class: 'Класс контент сущности'
     entity-name: 'Имя контент сущности'
-    label: 'Заголовок'
+    label: Заголовок
     has-bundles: 'Сущность имеет бандла'
+    has-forms: 'Entity has forms'
+    has-owner: 'Entity has owner'
     base-path: 'Базовые пути для маршрутов контент сущности'
     is-translatable: 'Контент сущность поддерживает переводы'
 questions:
@@ -14,6 +17,8 @@ questions:
     entity-name: 'Введите имя для новой контент сущности'
     label: 'Введите заголовок для новой контент сущности'
     has-bundles: 'Вы хотите, чтобы эта контент сущность имела бандл?'
+    has-forms: 'Do you want this (content) entity to have forms?'
+    has-owner: 'Do you want this (content) entity to have an owner?'
     base-path: 'Введите базовые пути для маршрутов контент сущности'
     is-translatable: 'Ваша сущность '
     revisionable: 'Ваша сущность поддерживает переводы?'

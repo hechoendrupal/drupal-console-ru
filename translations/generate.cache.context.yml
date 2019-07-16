@@ -1,5 +1,12 @@
 description: 'Генерирует контекст кеша'
+help: 'The <info>generate:cache:context</info> command helps you generates a new cache context'
+welcome: 'Welcome to the Drupal Cache Context generator'
+options:
+    module: 'The Module name.'
+    name: 'The cache context name'
+    class: 'Cache context class name'
 questions:
+    module: 'Enter the module name'
     name: 'Введите имя кеш контекста'
     class: 'Имя класса кеш контекста'
 examples:

@@ -7,7 +7,7 @@ messages:
 table-headers:
     permission-name: 'Машинное имя права'
     permission-label: 'Имя права'
-    permission-role: 'Роль'
+    permission-role: Роль
 examples:
     -
         description: 'Показывает все права, доступные на сайте'
