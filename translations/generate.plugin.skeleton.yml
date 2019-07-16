@@ -1,13 +1,16 @@
 description: 'Генерирует имплементацию skeleton плагина для тех плагинов для которых Drupal Console не имеет специального генератора'
 help: 'Команда <info>"%s"</info> помогает сгенерировать skeleton плагин "%s"'
+welcome: 'Welcome to the Drupal Skeleton Plugin generator'
 options:
     module: common.options.module
     plugin: 'ID плагина.'
     class: 'Имя класса плагина'
+    services: 'Load services from the container.'
 questions:
     module: common.questions.module
     plugin: 'Введите ID плагина'
     class: 'Введите имя класса плагина'
+    services: 'Enter your service'
 messages:
     plugin-dont-exist: 'Плагин "%s" не существует'
     plugin-generator-implemented: 'Плагин "%s" уже имеет продвинутую команду генератора, пожалуйста используйте "%s"'

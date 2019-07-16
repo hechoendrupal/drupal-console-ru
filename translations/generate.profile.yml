@@ -1,21 +1,27 @@
 description: 'Генерирует профайл.'
 help: 'Команда <info>generate:profile</info> помогает сгенерировать инсталяционный профайл.'
 welcome: 'Welcome to the Drupal installation profile generator'
-welcome: 'Добро пожаловать в Drupal генератор инсталяционных профайлов'
 options:
     profile: 'Имя профайла'
     machine-name: 'Машинное имя (только буквы в нижнем регистре и знаки подчеркивания)'
+    profile-path: 'The path of the profile'
     description: 'Описание профайла'
     core: 'Версия ядра'
     dependencies: 'Зависимости модулей разделенные запятыми (например context, panels)'
+    themes: 'the theme name'
     distribution: 'Имя дистрибьюции'
 questions:
     profile: 'Введите имя нового профайла'
     machine-name: 'Введите машинное имя'
+    profile-path: 'Enter the profile Path'
     description: 'Введите описание'
     core: 'Введите версию ядра Drupal'
     dependencies: 'Хотели бы вы добавить зависимости модулей?'
+    themes: 'Enter theme name'
     distribution: 'Является этот инсталяционный профайл дистрибьюцией?'
+suggestions:
+    my-useful-profile: 'My Useful Profile'
+    my-kick-ass-distribution: 'My Kick-ass Distribution'
 warnings:
     module-unavailable: 'Предупреждение: текущие модули не доступны в вашем локальном окружении "%s"'
 errors:

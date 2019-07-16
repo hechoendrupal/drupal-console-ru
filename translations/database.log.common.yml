@@ -10,3 +10,4 @@ messages:
     user: Пользователь
     severity: Критичность
     invalid-severity: 'Тип критичности некорректен, фильтр проигнорирован'
+    user-deleted: 'User has been deleted'

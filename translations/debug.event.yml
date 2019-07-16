@@ -4,8 +4,8 @@ arguments:
     event: 'Событие для отладки'
 messages:
     event: 'Имя события'
-    class: 'Класс'
-    method: 'Метод'
+    class: Класс
+    method: Метод
     no-events: 'Запрашиваемое событие не существует, попробуйте выполнить следующую команду: debug:event'
 examples:
     -

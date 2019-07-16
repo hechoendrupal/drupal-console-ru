@@ -1,6 +1,8 @@
 description: 'Отображает текущие маршруты для приложения'
 arguments:
     route-name: 'Имена маршрутов'
+options:
+    pattern: 'Route pattern'
 messages:
     name: 'Имя маршрута'
     class: 'Путь класса'
@@ -17,3 +19,12 @@ examples:
     -
         description: 'Отображает детали для маршрута user.page (/user)'
         execution: 'drupal rod user.page'
+    -
+        description: 'Shows the routes list on the site'
+        execution: 'drupal debug:router'
+    -
+        description: 'Display information on the user.login'
+        execution: 'drupal debug:router user.login'
+    -
+        description: 'Display information for the routes by pattern (/user/login)'
+        execution: 'drupal debug:router --pattern=/user/login'

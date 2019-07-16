@@ -2,16 +2,27 @@ description: 'Сгенерировать команды для консоли.'
 help: 'Команда <info>generate:command</info> позволяет вам сгенерировать новую команду.'
 welcome: 'Добро пожаловать, в Drupal генератор команд'
 options:
-    module: 'Название модуля (который будет содержать команду).'
-    controller-title: 'Имя контроллера.'
+    extension: 'The name of the Extension (modules, profiles or themes name that will contain the command).'
+    extension-type: 'The type of the Extension (can be module, profile or theme).'
     class: 'Имя класса, описывающего команду. (Должно оканчиваться словом ''Commmand'').'
     name: 'Имя команды.'
+    interact: 'Add interact method.'
+    initialize: 'Add initialize method.'
     container-aware: 'Команда знает о исталяции Drupal сайта, когда извлекается'
+    services: 'Load services from the container.'
+    generator: 'Add a Generator class for this command.'
+    module: 'Название модуля (который будет содержать команду).'
+    controller-title: 'Имя контроллера.'
 questions:
-    module: common.questions.module
+    extension: 'Enter the extension name'
     class: 'Введите имя класса команды. (Должно оканчиваться словом ''Commmand'').'
     name: 'Введите имя команды.'
+    interact: 'Do you want to add the interact method?'
+    initialize: 'Do you want to add the initialize method?'
     container-aware: 'Команда знает о инсталляции Drupal сайта, когда извлекается?'
+    services: 'Enter your service'
+    generator: 'Do you want to add a Generator class?.'
+    module: common.questions.module
 messages:
     title-not-empty: 'Имя не может быть пустым'
 examples:

@@ -4,9 +4,6 @@ options:
 messages:
     name: 'Расширения с брейкпоинтами'
 examples:
-    - description: 'Отображает брейкпоинты для темы Bartik.'
-      execution: drupal debug:breakpoints bartik
-examples:
-    - description: 'Отображает брейкпоинты досутпные на сайте'
-      execution: |
-        drupal debug:breakpoints
+    -
+        description: 'Отображает брейкпоинты для темы Bartik.'
+        execution: 'drupal debug:breakpoints bartik'

@@ -7,6 +7,7 @@ options:
     limit: 'Сколько материалов вы хотите создать'
     title-words: 'Максимальное количество слов в заголовках материалов'
     time-range: 'Как далеко назад во времени материалы должны быть датированы'
+    revision: 'Create revisions'
 questions:
     content-type: 'Выберите тип(ы) содержимого, которые будут использованы при создании материалов'
     limit: 'Введите значение количества материалов, которые вы хотите создать'
@@ -19,6 +20,7 @@ questions:
         - '1 неделю назад'
         - '1 месяц назад'
         - '1 год назад'
+    revision: 'Do you want to add revisions?'
 messages:
     node-id: 'Идентификатор материала'
     content-type: 'Тип содержимого'
@@ -26,6 +28,7 @@ messages:
     created: 'Время создания'
     invalid-content-types: 'Типы содержимого "%s" недопустимы'
     created-nodes: '"%s" материалов создано успешно.'
+    error: 'Error creating nodes: "%s"'
 examples:
     -
         description: 'Создает ноды для указанного типа.'

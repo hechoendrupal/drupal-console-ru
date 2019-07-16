@@ -1,6 +1,6 @@
 options:
     env: 'Имя среды окружения'
-    no-debug: 'Выключение режима отладки'
+    debug: 'Switches on debug mode'
     learning: 'Генерация подробного вывода'
     generate-chain: 'Показать параметры и аргументы выполняемой команды как yaml вывод для передачи по цепочке'
     generate-inline: 'Показать параметры и аргументы выполняемой команды одной строкой'
@@ -17,6 +17,7 @@ options:
     no-ansi: 'Отключить формат ANSI для сообщений'
     no-interaction: 'Не задавать вопросы'
     check-fix: 'Попытаться устранить ошибки.'
+    no-debug: 'Выключение режима отладки'
 arguments:
     command: 'Используйте команду'
 messages:
@@ -29,6 +30,8 @@ messages:
     files:
         generated: 'Созданные или обновленные файлы'
         copied: 'Скопированные файлы'
+    lines-code: 'Generated lines: %s'
+    path: 'Generation path'
     learning:
         route: "Необходимо определить маршрут для создания страницы.\nМаршрут сопоставляет URL-путь с методом или функцией в контроллере,\n которые будет вызваны при переходе по URL.\nПри переходе на http://drupal8.dev/{{ route.path }}, система попытается\n найти маршрут для пути {{ route.path }}. При наличии маршрута система\n выполнит обратный вызов функции контроллера. В данном случае обратный\n вызов определен как класс\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\nи метод (\"{{ route.method }}\")."
     autocomplete: "Bash or Zsh: Добавьте эту строку в конфигурационный файл вашей командной оболочки:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: Создайте символьную ссылку\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
@@ -40,6 +43,9 @@ messages:
 errors:
     invalid-command: 'Команда "%s" не найдена.'
     renamed-command: 'Команда "%s" недоступна в данной версии, используйте команду "%s".'
+    drush-command: 'Command "%s" is a Drush command (deprecated). Drupal Console equivalent "%s" was executed instead.'
+    statistics-failed: "The Drupal console failed to send statistics. After 10 attempts, this feature was disabled.\nIf you want to enable it again, use the following command:\n\n<info>drupal settings:set statistics.enabled true</info>\n"
+    statistics-url-failed: "The Drupal console failed to send statistics.\nYou must configure it in the global config.yml, use the following command and choose your preference:\n\n<info>drupal init</info>"
 site:
     messages:
         path: 'Путь к папке с Drupal'
@@ -65,14 +71,14 @@ remote:
 gitbook:
     messages:
         title: 'Список команд Drupal Console'
-        note: 'Внимание'
+        note: Внимание
         note-description: 'Команды Drupal Console *должны* запускаться в папке с Drupal 8'
         command: 'Команда Drupal Console'
         command_description: '**"%s"** команда "%s"'
-        usage: 'Использование'
+        usage: Использование
         options: 'Доступные параметры'
-        option: 'Команда'
-        details: 'Детали'
+        option: Команда
+        details: Детали
         arguments: 'Доступные аргументы'
-        argument: 'Аргумент'
-        examples: 'Примеры'
+        argument: Аргумент
+        examples: Примеры

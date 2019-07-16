@@ -1,7 +1,18 @@
 description: 'Сгенерировать реализацию hook_form_alter() или hook_form_FORM_ID_alter()'
 help: 'Команда <info>"%s"</info> позволяет вам сгенерировать новый "%s"'
+welcome: 'Welcome to the Drupal Form Alter generator'
 options:
+    module: 'The Module name.'
     form-id: 'Идентификатор формы для внесения изменений'
+    inputs: 'Create inputs in a form.'
+questions:
+    module: 'Enter the module name'
+    form-id: 'Enter the Form ID to alter'
+    type: 'Enter New field type'
+    label: 'Input label'
+    description: Description
+    default-value: 'Default value'
+    weight: 'Weight for input item'
 messages:
     inputs: "Вы можете добавить поля формы для внесения изменений в форму.\nЭто опционально, нажмите <info>enter</info> для <info>продолжения</info>"
     loading-forms: 'Загрузка описания форм из модуля Webprofiler'

@@ -13,6 +13,8 @@ questions:
     label: 'Введите заголовок плагина'
     plugin-id: 'Введите ID плагина'
     description: 'Введите описание плагина'
+suggestions:
+    my-image-effect: 'My Image Effect'
 examples:
     -
         description: 'Генерирует плагин эффект изображения по имени модуля, классу, заголовку, ID плагина и описанию'

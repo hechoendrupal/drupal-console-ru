@@ -1,12 +1,24 @@
 description: 'Выполнить указанный update_N хук в модуле или выполнить все'
-options:
-    update-n: 'Указанный update_N хук будет выполнен'
+questions:
+    update: 'Do you want to run the specified pending updates?'
+    post-update: 'Do you want to run the specified pending post updates?'
+arguments:
+    module: 'Module name'
+    update-n: 'Specific Update N function to be executed'
 messages:
     no-module-updates: 'Нет доступных обновлений для модуля "%s"'
     executing-update: 'Выполнение функции обновления "%s" модуля "%s"'
+    executing-post-update: 'Executing post update function "%s" of module "%s"'
     module-update-function-not-found: 'Модуль "%s" не содержит функции обновления "%s"'
     executing-required-previous-updates: 'Выполнение требуемых предыдущих обновлений'
+    no-pending-updates: 'There aren''t updates available'
+    no-pending-post-updates: 'There aren''t post updates available'
+    pending-post-updates: 'There are the following post updates available:'
+    pending-updates: 'There are the following updates available:'
 examples:
     -
         description: 'Выполнить все обновления'
         execution: "drupal update:execute\n"
+    -
+        description: 'Execute updates for system module'
+        execution: "drupal update:execute system\n"

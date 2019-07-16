@@ -1,13 +1,15 @@
 description: 'Вывести список всех заданных локальных и удаленных сайтов.'
 help: 'Команда <info>site:debug</info> выводит список всех заданных локальных и удаленных сайтов.'
 messages:
-    site: 'Сайт'
-    host: 'Хост'
-    root: 'Корень'
-    not-sites: 'Не задано ни одного сайта'
+    site: Сайт
+    host: Хост
+    root: Корень
+    invalid-sites: 'No sites defined.'
+    invalid-sites-using: "Using a site alias requires local configuration, more info at:\n   https://docs.drupalconsole.com/en/alias/using-site-alias.html\n"
     invalid-site: 'Некорректное имя сайта'
     private-key: 'Ошибка с приватным ключом'
     connect-error: 'Ошибка удаленного подключения'
+    not-sites: 'Не задано ни одного сайта'
     directory-not-found: 'Сайты локальной директории не найдены'
 options:
     target: Цель

@@ -1,7 +1,6 @@
 description: 'Генерирует тип плагина с Yaml обнаружением'
 help: 'Команда <info>generate:plugin:type:yaml</info> помогает сгенерировать новый тип плагина который использует Yaml обнаружение.'
 welcome: 'Welcome to the Drupal Plugin Type generator'
-welcome: 'Добро пожаловать, в Drupal генератор типов плагинов'
 options:
     module: common.options.module
     class: 'Название класса типа плагина'

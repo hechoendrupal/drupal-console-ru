@@ -1,7 +1,7 @@
 description: 'Вывести список стилей изображений на сайте'
 messages:
     styles-list: 'Стили изображений, настроенные на сайте'
-    styles-label: 'Название'
+    styles-label: Название
     styles-name: 'Машинное имя'
 examples:
     -

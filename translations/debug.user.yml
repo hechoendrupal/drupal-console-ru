@@ -13,8 +13,8 @@ questions:
 messages:
     user-id: 'Идентификатор пользователя'
     username: 'Имя пользователя'
-    roles: 'Роли'
-    status: 'Статус'
+    roles: Роли
+    status: Статус
 examples:
     -
         description: 'Список пользователей на сайте'

@@ -1,10 +1,12 @@
 description: 'Генерирует плагин обработки для миграции'
 help: 'Создает новый плагин обработки для миграции.'
+welcome: 'Welcome to the Drupal Migrate Process Plugin generator'
 options:
     module: common.options.module
     class: 'Имя класса плагина'
     plugin-id: 'ID плагина'
 questions:
+    module: 'Enter the module name'
     class: 'Введите имя класса плагина обработки для миграции'
     plugin-id: 'Введите ID плагина обработки для миграции'
 examples:

@@ -8,12 +8,16 @@ arguments:
     key: Ключ
     value: Значение
     config-name: 'Имя конфигурации.'
+options:
+    key: Key
+    value: Value
 messages:
     configuration: 'Имя конфигурации.'
     configuration-key: 'Ключ конфигурации'
     original: 'Оригинальное значение'
     updated: 'Переопределяемое значение'
     invalid-name: 'Объект конфигурации "%s", не существует'
+    invalid-config-file: 'Config file does not exist.'
 examples:
     -
         description: 'Установить лимит флуда до 10 для модуля Contact'

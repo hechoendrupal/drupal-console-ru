@@ -16,6 +16,7 @@ messages:
     name: Имя
     invalid-vocabularies: 'Словари "%s" недопустимы'
     created-terms: '"%s" терминов создано успешно.'
+    error: 'Error creating terms: "%s"'
 examples:
     -
         description: 'Создает термины в указанном словаре.'

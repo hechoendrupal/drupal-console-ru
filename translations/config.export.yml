@@ -4,6 +4,8 @@ options:
     tar: 'Если установлено, конфигурация будет экспортирована в архив.'
     remove-uuid: 'Если установлено, конфигурация будет экспортирована без uuid ключа.'
     remove-config-hash: 'Если установлено, конфигурация будет экспортирована без хеш ключа сайта по умолчанию.'
+questions:
+    directory: 'Enter the directory name to save the configuration files.'
 messages:
     directory: 'Конфигурация была экспортирована в:'
     error: 'Произошла ошибка при создании каталога "%s"'

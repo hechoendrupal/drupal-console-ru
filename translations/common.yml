@@ -22,6 +22,9 @@ questions:
         confirm: 'Вы хотите загрузить сервисы из контейнера?'
         message: "\nВведите имя сервиса или используйте клавишу вверх или вниз.\nЭто не обязательное действие, нажмите <info>ввод</info> для <info>продолжения</info>\n"
         name: 'Введите ваш сервис'
+    roles:
+        message: "\nType the role name or use keyup or keydown.\nThis is optional, press <info>enter</info> to <info>continue</info>\n"
+        name: 'Enter your role'
     inputs:
         confirm: 'Вы хотите создать структуру формы?'
         label: 'Метка поля ввода'
@@ -34,6 +37,7 @@ questions:
         weight: 'Вес для поля ввода'
         title: Заголовок
         fieldset: 'Набор полей'
+        new-field: 'Enter a new field properties'
         machine_name: 'Машинное имя поля ввода'
 errors:
     module-dependency: 'Отсутствует зависимость модуля, "%s" не установлен. Попробуйте module:install чтоб установить его.'
@@ -49,3 +53,4 @@ messages:
     drupal-core: 'Ядро Drupal'
     move-phar: 'Доступ к консоли из любого места в системе'
     quick-start: 'Скачайте, установите и работайте с Drupal 8'
+    available-field-types: 'Available types: <comment>%s</comment>'

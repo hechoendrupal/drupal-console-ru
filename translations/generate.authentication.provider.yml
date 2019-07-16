@@ -1,9 +1,14 @@
 description: 'Генерирует провайдер аутентификации'
 help: 'Команда <info>generate:authentication:provider</info> помогает сгенерировать новый провайдер аутентификации.'
+welcome: 'Welcome to the Drupal Authentication Provider generator'
 options:
+    module: 'The Module name.'
     class: 'Класс провайдера аутентификации'
     provider-id: 'ID провайдера'
-module: common.options.module
+questions:
+    module: 'Enter the module name'
+    class: 'Enter the Authentication Provider class'
+    provider-id: 'Enter the Provider ID'
 examples:
     -
         description: 'Генерирует провайдер аутентификации по модулю, классу и ID  провайдера'

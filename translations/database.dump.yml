@@ -1,9 +1,11 @@
 description: 'Дамп структуры и содержимого базы данных'
 arguments:
     database: 'Ключ базы данных из settings.php'
+    target: 'Database target from settings.php'
 options:
     file: 'Имя файла резервной копии базы данных'
     gz: 'Передайте эту опцию, если вы хотите чтобы результирующий sql файл был сжат, как gzip архив'
+    exclude-cache: 'Pass this option if you want to exclude cache tables.'
 messages:
     success: 'База данных экспортирована в:'
 examples:

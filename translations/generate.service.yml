@@ -6,7 +6,10 @@ options:
     service-name: 'Имя сервиса'
     class: 'Имя класса'
     interface: Интерфейс
+    interface-name: 'Interface name'
+    logger-channel: 'Logger channel'
     services: common.questions.services
+    path-service: Path
     path: Path
 questions:
     module: common.questions.module
@@ -14,7 +17,9 @@ questions:
     class: 'Введите имя Класса'
     interface: 'Создать интерфейс'
     interface-name: 'Введите имя интерфейса'
+    logger-channel: 'Create a logger channel'
     services: common.options.services
+    path-service: 'Enter the path for the services'
     path: 'Введите путь для сервисов'
 messages:
     service-already-taken: 'Имя сервиса уже было использовано в модуле "%s"'

@@ -8,7 +8,6 @@ options:
     overwrite-config: 'Перезаписать активную конфигурацию если это необходимо'
 questions:
     module: 'Module name (press <ввод> to stop adding modules)'
-    module: 'Имя модуля (нажмите <ввод> для того, чтобы завершить добавление модулей)'
     invalid-module: 'Некоректный модуль "%s"'
 messages:
     no-modules: 'Вы должны предоставить модуль или модулм, которые будут атктивированы.'

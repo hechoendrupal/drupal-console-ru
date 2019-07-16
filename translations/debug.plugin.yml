@@ -5,6 +5,8 @@ arguments:
     id: 'ID плагина'
 errors:
     plugin-type-not-found: 'Тип плагина "%s" не найден. Нет доступных сервисов для этого типа.'
+messages:
+    plugin-info: 'Plugin additional information'
 table-headers:
     plugin-type-name: 'Тип плагина'
     plugin-type-class: 'Класс менеджера плагина'
@@ -12,6 +14,7 @@ table-headers:
     plugin-class: 'Класс плагина'
     definition-key: Ключ
     definition-value: Значение
+    setting: Setting
 examples:
     -
         description: 'Отображает список всех плагинов на текущем сайте'

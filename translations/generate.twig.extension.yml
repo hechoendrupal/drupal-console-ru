@@ -2,8 +2,15 @@ description: 'Генерирует Twig расширение.'
 help: 'Команда <info>generate:twig:extension</info> помогает сгенерировать Twig расширение.'
 welcome: 'Добро пожаловать в генератор Drupal Twig расширений'
 options:
+    module: 'The Module name.'
     name: 'Имя Twig расширения'
+    class: 'Class name'
+    services: 'Load services from the container.'
 questions:
+    module: 'Enter the module name'
+    name: 'Enter the twig Extension name'
+    class: 'Class name'
+    services: 'Enter your service'
     twig-extension: 'Введите имя Twig расширения'
 examples:
     -

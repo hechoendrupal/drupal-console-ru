@@ -3,6 +3,9 @@ options:
     file: 'Путь к архиву с конфигурацией для импорта.'
     directory: 'Путь к каталогу с конфигурацией для импорта.'
     remove-files: 'Удалить файлы после синхронизации.'
+    skip-uuid: 'Skip uuid from files'
+questions:
+    directory: 'Enter the directory name to import the configuration files.'
 messages:
     config_files_imported: 'Список конфигурационных файлов.'
     imported: 'Конфигурация импортирована успешно.'
